@@ -1,0 +1,25 @@
+{% load static i18n %}
+
+    <!-- Start Contact Area-->
+    <div class="contact-area position-relative {% if not testimonials %}ptb-120{% endif %}">
+        <div class="container">
+            <div class="contact-items rounded-pill position-relative slide-top">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-8">
+                        <div class="title">
+                            <h3 class="text-white fs-40 mb-0 lh-2">
+                                {% trans "Renforcer votre succès grâce à des services informatiques complets" %}
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="b-btn text-end">
+                            <a href="{% url 'contacts:contact' %}" class="default-btn">{% trans "Contactez-nous" %}</a>
+                        </div>
+                    </div>
+                </div>
+                <img class="contact-shape" src="{% static 'assets/images/shape/contact-shape.png' %}" alt="image">
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Area-->

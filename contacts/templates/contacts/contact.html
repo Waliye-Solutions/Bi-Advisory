@@ -1,0 +1,205 @@
+{% extends "public/includes/base.html" %}
+
+{% load i18n static %}
+
+{% block title %} {% trans "Contact" %} - {{ site_name }} {% endblock title %}
+
+
+
+{% block content %}
+    <!-- Start Page Banner Area -->
+    <div class="page-banner-area position-relative z-1 overflow-hidden" style="background-image: url({% static 'assets/images/hero/page-banner.jpg' %});">
+        <div class="container">
+            <div class="page-title text-center">
+                <h3 class="text-white fs-50 mb-2">
+                    {% trans "Contactez-nous" %}
+                </h3>
+                <ul class="pe-0 ps-0 mb-0 list-unstyled">
+                    <li><a href="{% url 'core:home' %}">{% trans "Accueil" %}</a></li>
+                    <li><span class="active">{% trans "Contactez-nous" %}</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Page Banner Area -->
+
+
+    <!-- Start Contact Area -->
+    <div class="adress-area ptb-120">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-8 col-md-7">
+                    <div class="leave-card style-1 p-4 p-lg-5 slide-left">
+                        <div class="section-heading">
+                            <h2>
+                                {% trans "Envoyez-nous un message" %}
+                            </h2>
+                        </div>
+                        <form class="contact-card1" method="POST">
+                            {% csrf_token %}
+                            
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    {{ form.full_name }}
+                                </div>
+                                <div class="col-lg-6">
+                                    {{ form.email }}
+                                </div>
+                                <div class="col-lg-6">
+                                    {{ form.phone_number }}
+                                </div>
+                                <div class="col-lg-6">
+                                    {{ form.subject }}
+                                </div>
+                            </div>
+                            {{ form.message }}
+                            <button type="submit" class="default-btn">
+                                {% trans "Envoyez" %}
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5">
+                    <div class="warps-adress ms-auto slide-right" style="max-width: 400px;">
+                        <div class="section-heading">
+                            <h2>{% trans "Infos" %}</h2>
+                        </div>
+                        <div class="single-adress-card d-flex align-items-center gap-4 mb-4">
+                            <div class="icon">
+                                <i class="ti ti-phone"></i>
+                            </div>
+                            <div class="content">
+                                <h4 class="fs-24 fw-bold mb-2">{% trans "Téléphone" %}</h4>
+                                <a href="tel:{{ site_phone_number }}" class="c-555">{{ site_phone_number }}</a>
+                            </div>
+                        </div>
+                        <div class="single-adress-card d-flex align-items-center gap-4 mb-4 style-1">
+                            <div class="icon">
+                                <i class="ti ti-mail"></i>
+                            </div>
+                            <div class="content">
+                                <h4 class="fs-24 fw-bold mb-2">{% trans "Email" %}</h4>
+                                <a href="mailto:{{ site_email_address }}" class="c-555">{{ site_email_address }}</a>
+                            </div>
+                        </div>
+                        <div class="single-adress-card d-flex align-items-center gap-4">
+                            <div class="icon">
+                                <i class="ti ti-map"></i>
+                            </div>
+                            <div class="content">
+                                <h4 class="fs-24 fw-bold mb-2">{% trans "Adresse" %}</h4>
+                                <a href="https://www.google.com/maps/search/3016+sunrise+road+las+australia/@-26.4308142,152.9829778,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D" class="c-555">
+                                    {{ site_address }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Area -->
+
+
+    <!-- Start Map Area -->
+    <div class="map-area bg-rgb">
+        <div class="container-fluid">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30813592.438692946!2d89.58144805510828!3d-19.48034877240034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b2bfd076787c5df%3A0x538267a1955b1352!2sAustralia!5e0!3m2!1sen!2sbd!4v1746953943015!5m2!1sen!2sbd"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- End Map Area -->
+{% endblock content %}
+
+
+{% block extra_scripts %}
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const form = document.querySelector(".contact-card1");
+
+            const fullName = document.querySelector('[name="full_name"]');
+            const email = document.querySelector('[name="email"]');
+            const phone = document.querySelector('[name="phone_number"]');
+            const subject = document.querySelector('[name="subject"]');
+            const message = document.querySelector('[name="message"]');
+
+            function showError(input, message) {
+                removeError(input);
+
+                const error = document.createElement("small");
+                error.classList.add("text-danger", "d-block", "mt-1");
+                error.innerText = message;
+
+                input.classList.add("border-danger");
+
+                input.parentNode.appendChild(error);
+            }
+
+            function removeError(input) {
+                input.classList.remove("border-danger");
+
+                const existingError = input.parentNode.querySelector("small");
+                if (existingError) {
+                    existingError.remove();
+                }
+            }
+
+            function validateEmail(emailValue) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue);
+            }
+
+            form.addEventListener("submit", function (e) {
+                let isValid = true;
+
+                // Nettoyage des anciennes erreurs
+                [fullName, email, phone, subject, message].forEach(input => {
+                    removeError(input);
+                });
+
+                // Full Name
+                if (fullName.value.trim() === "") {
+                    showError(fullName, "{% trans 'Veuillez entrer votre nom complet.' %}");
+                    isValid = false;
+                }
+
+                // Email
+                if (email.value.trim() === "") {
+                    showError(email, "{% trans 'Veuillez entrer votre adresse email.' %}");
+                    isValid = false;
+                } else if (!validateEmail(email.value.trim())) {
+                    showError(email, "{% trans 'Adresse email invalide.' %}");
+                    isValid = false;
+                }
+
+                // Phone
+                if (phone.value.trim() === "") {
+                    showError(phone, "{% trans 'Veuillez entrer votre numéro de téléphone.' %}");
+                    isValid = false;
+                }
+
+                // Subject
+                if (subject.value.trim() === "") {
+                    showError(subject, "{% trans 'Veuillez saisir le sujet.' %}");
+                    isValid = false;
+                }
+
+                // Message
+                if (message.value.trim() === "") {
+                    showError(message, "{% trans 'Veuillez écrire un message.' %}");
+                    isValid = false;
+                } else if (message.value.trim().length < 10) {
+                    showError(message, "{% trans 'Le message doit contenir au moins 10 caractères.' %}");
+                    isValid = false;
+                }
+
+                if (!isValid) {
+                    e.preventDefault();
+                }
+
+            });
+
+        });
+    </script>
+{% endblock extra_scripts %}

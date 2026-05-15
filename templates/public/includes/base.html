@@ -1,0 +1,140 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" prefix="og: https://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="light" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="{{ site_name }}">
+    <meta name="application-name" content="{{ site_name }}">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <meta property="fb:app_id" content="">
+    <meta name="apple-itunes-app" content="">
+    <meta name="hostname" content="{{ request.get_host }}">
+    <meta name="expected-hostname" content="www.waliye.com">
+
+    {% block locale_language %}
+        <meta name="language" content="fr">
+        <meta name="locale" content="fr_CI">
+        <meta property="og:locale" content="fr_CI">
+    {% endblock locale_language %}
+
+    {% block robots %}
+        <meta name="robots" content="index,follow" />
+    {% endblock robots %}
+
+    {% block seo %}{% endblock seo %}
+
+    <link rel="canonical" href="{{ request.build_absolute_uri }}">
+    {% block style %}
+        {% include "public/includes/styles.html" %}
+    {% endblock style %}
+
+    <title>{% block title %}{% endblock title %}</title>
+
+    {% block extra_head %}{% endblock extra_head %}
+
+    {% block favicon %}
+        {% include "public/includes/favicon.html" %}
+    {% endblock favicon %}
+
+    {% block required_js %}
+    {% endblock required_js %}
+
+    {% block analytics %}
+    {% endblock analytics %}
+
+    {% block meta_pixel_script %}
+    {% endblock meta_pixel_script %}
+</head>
+<body>
+    <!-- Scroll Smoother -->
+    <div class="has-smooth" id="has_smooth"></div>
+    <!-- Start Top Header Area -->
+
+    {% comment %} 
+    {% block preloader %}
+        <!-- Start Preloader Area -->
+        <div id="preloader">
+            <div id="container" class="container-preloader">
+                <div class="animation-preloader">
+                    <div class="spinner"></div>
+                    <div class="txt-loading">
+                    </div>
+                </div>	
+                <div class="loader-section section-left"></div>
+                <div class="loader-section section-right"></div>
+            </div>
+		</div>	
+        <!-- End Preloader Area -->
+    {% endblock preloader %}
+    {% endcomment %}
+
+
+    {% block navbar %}
+        {% include "public/includes/navbar.html" %}
+    {% endblock navbar %}
+
+    <main id="main-content" class="main-content">
+        {% block content %}{% endblock content %}
+        {% block extra_content %}{% endblock extra_content %}
+    </main>
+
+
+    {% block footer %}
+        {% include "public/includes/footer.html" %}
+    {% endblock footer %}
+
+
+    {% block btn_scroll_up %}
+        <!-- Go top Btn -->
+        <div class="go-top">
+            <i class="ti ti-arrow-up-to-arc"></i>
+        </div>
+        <!-- Go top Btn End -->
+    {% endblock btn_scroll_up %}
+
+    {% block scripts %}
+        {% include "public/includes/scripts.html" %}
+    {% endblock scripts %}
+    {% block extra_scripts %}{% endblock extra_scripts %}
+
+    {% if messages %}
+        <script>
+            var notyfy = new Notyf({
+                duration: 10000,
+                dismissible: true,
+                position: {
+                    x: "center",
+                    y: "top",
+                },
+                types: [
+                    {
+                        type: "warning",
+                        background: "#ffc107",
+                        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-octagon-fill" viewBox="0 0 16 16"><path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>`,
+                        dismissible: true
+                    },
+                    {
+                        type: "info",
+                        background: "#0dcaf0",
+                        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>`,
+                        dismissible: true
+                    }
+                ]
+            });
+
+            {% for message in messages %}
+                notyfy.open({
+                    type: "{{ message.tags }}",
+                    message: `{{ message }}`
+                });
+            {% endfor %}
+        </script>
+    {% endif %}
+</body>
+</html>

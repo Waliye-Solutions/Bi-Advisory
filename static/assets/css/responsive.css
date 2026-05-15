@@ -1,0 +1,2385 @@
+/* Min width 768 */
+@media only screen and (max-width: 767px) {
+  /* Section Padding */
+  .ptb-120 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pt-120 {
+    padding-top: 50px;
+  }
+  .pb-120 {
+    padding-bottom: 50px;
+  }
+  .ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pt-100 {
+    padding-top: 50px;
+  }
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+  .ptb-80 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pt-80px {
+    padding-top: 50px;
+  }
+  .pb-80px {
+    padding-bottom: 50px;
+  }
+  .mb-120 {
+    margin-bottom: 50px;
+  }
+  /* Font Size */
+  .fs-14 {
+    font-size: 14px;
+  }
+  .fs-18 {
+    font-size: 16px;
+  }
+  .fs-20 {
+    font-size: 18px;
+  }
+  .fs-22 {
+    font-size: 20px;
+  }
+  .fs-24 {
+    font-size: 20px;
+  }
+  .fs-25 {
+    font-size: 22px;
+  }
+  .fs-26 {
+    font-size: 23px;
+  }
+  .fs-28 {
+    font-size: 25px;
+  }
+  .fs-30 {
+    font-size: 25px;
+  }
+  .fs-32 {
+    font-size: 25px;
+  }
+  .fs-36 {
+    font-size: 25px;
+  }
+  .fs-40 {
+    font-size: 25px;
+  }
+  .fs-48 {
+    font-size: 25px;
+  }
+  .fs-50 {
+    font-size: 25px;
+  }
+  .fs-60 {
+    font-size: 25px;
+  }
+  .fs-64 {
+    font-size: 25px;
+  }
+  .fs-80 {
+    font-size: 25px;
+  }
+  /* Default Container */
+  .container-fluid.side-padding {
+    max-width: 540px;
+  }
+  /* Section Heading */
+  .section-heading {
+    margin-bottom: 25px;
+  }
+  .section-heading h2 {
+    font-size: 25px;
+  }
+  /* Section Title */
+  .section-title {
+    margin-bottom: 25px;
+  }
+  .section-title h2 {
+    font-size: 25px;
+  }
+  /* Default Button */
+  .default-btn {
+    padding: 12px 28px 11px 28px;
+  }
+  /* Shapes Image */
+  .shapes-image {
+    display: none;
+  }
+  .shapes-images {
+    display: none;
+  }
+  /* Navbar */
+  .navbar .others-options {
+    display: none;
+  }
+  .navbar.one .navbar-toggler .burger-menu span {
+    background-color: var(--dark) !important;
+  }
+  /* Hero Area CSS */
+  .hero-area {
+    padding-top: 125px;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+  }
+  .hero-content h1 {
+    font-size: 25px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+  }
+  .hero-content .hero-image {
+    margin-bottom: 0;
+  }
+  .hero-content .hero-title {
+    margin-left: 0;
+  }
+  .hero-content .h-image-content {
+    max-width: 100% !important;
+  }
+  .hero-content .vedio-btn {
+    left: 0;
+  }
+  .hero-content .live-card {
+    margin-bottom: 0;
+    padding: 25px;
+    max-width: 100% !important;
+  }
+  .hero-content .live-card::before {
+    bottom: 65px;
+  }
+  .hero-content .live-card h3 {
+    margin-bottom: 30px;
+  }
+  /* Startup Banner Area CSS */
+  .startup-banner-area .advice-area1 {
+    padding: 10px 0;
+  }
+  .startup-banner-area .advice-content1 li {
+    font-size: 50px;
+    letter-spacing: 5px;
+  }
+  .startup-banner-area .contant {
+    margin-top: 35px;
+    max-width: 100% !important;
+  }
+  .startup-banner-area .start-image .google-card {
+    bottom: 35px;
+    left: -110px;
+    padding: 8px 13px 8px 13px;
+  }
+  .startup-banner-area .start-image .google-card .g-image {
+    max-width: 50px;
+  }
+  .startup-banner-area .start-image .google-card i {
+    font-size: 13px;
+  }
+  .startup-banner-area .start-image .google-card span {
+    font-size: 13px;
+    line-height: 1;
+  }
+  .startup-banner-area .start-image .default-btn {
+    top: -24px;
+    right: -10px;
+    padding: 5px 14px 8px 14px;
+  }
+  .startup-banner-area .start-image .one {
+    top: 20px;
+    right: auto;
+    left: -105px;
+  }
+  /* Software Banner Area CSS */
+  .software-banner-area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .software-banner-area .software-content {
+    margin-bottom: 30px;
+  }
+  .software-banner-area .software-content h1 {
+    margin-bottom: 20px;
+  }
+  .software-banner-area .software-content p {
+    margin-bottom: 20px;
+  }
+  .software-banner-area .software-content .cricle-content {
+    right: 50px;
+    top: 90%;
+    z-index: 2;
+  }
+  .software-banner-area .software-content .cricle-content .c-image {
+    max-width: 120px;
+  }
+  .software-banner-area .software-content .cricle-content .cricle i {
+    top: 30%;
+    left: 40px;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+  .software-banner-area .banner-image {
+    width: 100%;
+    height: 350px;
+    z-index: 1;
+    border-radius: 10px;
+    position: relative;
+    -webkit-clip-path: unset;
+            clip-path: unset;
+    background-size: cover;
+  }
+  .software-banner-area .advice-area1 {
+    padding: 10px 0 10px;
+  }
+  /* Discover Area CSS */
+  .discover-area {
+    padding-top: 100px;
+    margin-top: -68px;
+  }
+  .discover-area .content p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  /* Single Services Card */
+  .single-services-card {
+    padding: 25px;
+  }
+  .single-services-card .icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  .single-services-card img {
+    max-width: 50px;
+  }
+  /* Startup Service Area CSS */
+  .startup-service-area .top-bar {
+    margin-bottom: 30px;
+  }
+  .startup-service-area .top-bar h2 {
+    margin-bottom: 25px !important;
+  }
+  .startup-service-area .top-bar .text-end {
+    text-align: start !important;
+  }
+  .startup-service-area .startup-service-card {
+    padding: 30px 25px;
+  }
+  .startup-service-area .startup-service-card h1 {
+    font-size: 80px;
+    margin-bottom: 80px;
+  }
+  /* About Area CSS */
+  .about-image .card1 {
+    top: 0;
+    right: 0;
+    left: 0;
+    position: relative;
+  }
+  .about-image .style-1 {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .about-image .style-2 {
+    left: 0;
+  }
+  .about-area .section-heading ul {
+    margin-bottom: 25px;
+  }
+  .about-area .section-heading ul li {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .about-area .section-heading p {
+    margin-bottom: 20px;
+  }
+  /* Second About Area CSS */
+  .second-about-area .a-image .warp {
+    left: auto;
+    max-width: 100%;
+    margin-top: 25px;
+    padding: 25px 20px;
+  }
+  .second-about-area .section-heading span {
+    display: inline-block !important;
+  }
+  .second-about-area .section-heading p {
+    margin-bottom: 25px;
+  }
+  .second-about-area .section-heading .warps {
+    gap: 15px !important;
+  }
+  .second-about-area .section-heading .warps img {
+    max-width: 50px;
+  }
+  .second-about-area .section-heading .mt-5 {
+    margin-top: 30px !important;
+  }
+  /* Software About Area CSS */
+  .software-about-area .s-about-content {
+    margin-bottom: 25px;
+  }
+  .software-about-area .s-about-content .tab-items {
+    margin-bottom: 20px;
+  }
+  .software-about-area .s-about-content .tab-items .nav-pills .nav-link {
+    padding: 5px 8px;
+    font-size: 13px;
+  }
+  .software-about-area .s-about-content .mt-1 {
+    margin-top: 30px !important;
+  }
+  .software-about-area .s-about-image .shape {
+    display: none;
+  }
+  /* Funfact Area CSS */
+  .funfact-area.bx-1 {
+    border-radius: 0;
+  }
+  .funfact-area .rowgap.g-4, .funfact-area .rowgap .gx-4 {
+    --bs-gutter-x: 20px;
+  }
+  /* Second Funfact Area CSS */
+  .s-funfact-area .rowgap {
+    --bs-gutter-x: 20px;
+  }
+  /* Industry Area CSS */
+  .industry-area .nav-items .i-tabs {
+    margin-bottom: 25px;
+    margin-left: 0;
+  }
+  .industry-area .nav-items .i-tabs.me-3 {
+    margin-right: 0 !important;
+  }
+  .industry-area .nav-items .d-flex {
+    display: block !important;
+  }
+  .industry-area .idustry-image .count-card {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    transform: unset;
+    padding: 20px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+  }
+  .industry-area .nav-link {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+  /* Industry Area CSS */
+  .industry-area .i-warps .style-1 {
+    left: 0;
+    position: relative;
+    bottom: -170px;
+    padding: 20px;
+  }
+  /* Case Area CSS */
+  .case-area .container-fluid {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+  .case-area .top-bar h2 {
+    margin-bottom: 20px !important;
+  }
+  .case-area .top-bar .as-btn {
+    text-align: start;
+  }
+  .case-area .top-bar .as-btn .swiper-button-prev {
+    left: 0;
+    right: auto;
+  }
+  .case-area .top-bar .as-btn .swiper-button-next {
+    left: 50px;
+    right: auto;
+  }
+  .case-area .case-warps-items {
+    margin: 0;
+  }
+  .case-area .case-card .cardbody {
+    padding: 25px;
+    right: 0;
+  }
+  .case-area .case-card .cardbody .fs-24 {
+    font-size: 18px;
+  }
+  /* Schedule Area CSS */
+  .schedule-area .sechudule-image {
+    height: 350px;
+    margin-bottom: 25px;
+  }
+  .schedule-area .sechudule-image .card {
+    top: -100px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+  }
+  .schedule-area .sechudule-image .card .mb-4 {
+    margin-bottom: 10px !important;
+  }
+  .schedule-area .sechudule-image .card ul li {
+    margin-bottom: 8px;
+    font-size: 13px;
+  }
+  .schedule-area .consultation-form {
+    padding: 20px;
+  }
+  /* Peace Area CSS */
+  .peace-area .rowgap {
+    --bs-gutter-x: 20px;
+  }
+  /* Advice Area CSS */
+  .advice-area .advice-content li {
+    font-size: 45px;
+    letter-spacing: 4.4px;
+  }
+  /* Consultation Area CSS */
+  .consultation-area {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .consultation-form {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 30px 20px;
+  }
+  /* Software Consultation Area CSS */
+  .software-consultation-area {
+    padding-bottom: 50px;
+  }
+  .software-consultation-area::before {
+    display: none;
+  }
+  .software-consultation-area .consultation-form {
+    padding: 25px;
+  }
+  .software-consultation-area .cricle-content {
+    margin-left: 0;
+    text-align: center;
+  }
+  .software-consultation-area .cricle-content .c-image {
+    max-width: 170px;
+  }
+  .software-consultation-area .cricle-content .cricle i {
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    margin-top: -164px;
+    position: relative;
+  }
+  /* Testimono Area CSS */
+  .testimonials-area .section-heading {
+    margin-bottom: 40px;
+  }
+  .testimonials-area .ptb-80 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .testimonials-content {
+    padding: 25px 25px 0;
+  }
+  .testimonials-content .t-title span {
+    display: inline-block !important;
+  }
+  .testimono-card {
+    padding: 25px;
+    margin-top: 25px;
+  }
+  .testimono-card .user {
+    margin-bottom: 20px;
+  }
+  /* Clients Area CSS */
+  .clients-area {
+    padding-bottom: 80px;
+  }
+  .clients-area .c-image img {
+    width: 300px;
+    height: 300px;
+  }
+  .clients-area .c-image .u-image2 {
+    top: 70%;
+    right: 0;
+    width: 50px;
+    height: 50px;
+  }
+  .clients-area .c-image .u-image1 {
+    width: 50px;
+    height: 50px;
+  }
+  .clients-area .c-image .u-image3 {
+    bottom: -35px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+  }
+  .clients-area .c-content .c-qoute {
+    top: -20px;
+    max-width: 120px;
+  }
+  /* S-Advice Area CSS */
+  .s-abvice-area .advice-content li {
+    font-size: 50px;
+    letter-spacing: 5px;
+  }
+  /* Vedio Area CSS */
+  .vedio-area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .vedio-area .vedio-area h2 {
+    margin-bottom: 35px;
+  }
+  .vedio-area .popup-btn i {
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+  }
+  .vedio-area .popup-btn i::after {
+    width: 50px;
+    height: 50px;
+  }
+  /* Choose Us Area CSS */
+  .choose-us-area .section-heading .style-2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .choose-us-area .section-heading .warp-card {
+    padding: 25px;
+  }
+  .choose-us-area .section-heading .warp-card.d-flex {
+    display: block !important;
+  }
+  .choose-us-area .section-heading .warp-card .icon {
+    margin-bottom: 20px;
+  }
+  .choose-us-area .section-heading .warp-card span {
+    display: inline-block !important;
+  }
+  .choose-us-area .section-heading .shape3 {
+    display: none;
+  }
+  .choose-us-area .c-image .shape {
+    display: none;
+  }
+  .choose-us-area .c-image .shape1 {
+    display: none;
+  }
+  .choose-us-area .main-shape {
+    display: none;
+  }
+  /* Second Choose Area CSS */
+  .second-choose-area .s-content .s-choose-card.d-flex {
+    display: block !important;
+  }
+  .second-choose-area .s-content .s-choose-card .icon {
+    margin-bottom: 30px;
+  }
+  .second-choose-area .s-choose-image {
+    bottom: 0;
+  }
+  .second-choose-area .s-choose-image .form-control {
+    max-width: 100%;
+  }
+  .second-choose-area .s-choose-image .default-btn {
+    top: -10px;
+    left: 0;
+    padding: 8px 20px 8px 20px;
+  }
+  .second-choose-area .s-choose-image .form-style-1 {
+    top: 60%;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+  }
+  .second-choose-area .main-shape {
+    display: none;
+  }
+  /* Single Blog Card */
+  .single-blog-card .card-body {
+    padding: 20px 10px 30px;
+  }
+  .single-blog-card .card-body .gap-3 {
+    gap: 10px !important;
+  }
+  .single-blog-card .card-body .items li {
+    font-size: 14px;
+  }
+  /* Single News Card */
+  .single-news-card .cardbody {
+    padding: 15px;
+  }
+  .single-news-card .cardbody .fs-24 {
+    font-size: 18px;
+  }
+  .single-news-card .cardbody h3 {
+    margin-bottom: 15px;
+  }
+  .single-news-card .cardbody ul li {
+    font-size: 13px;
+  }
+  .single-news-card .cardbody ul li img {
+    max-width: 30px;
+  }
+  .single-news-card .cardbody ul span a {
+    font-size: 13px;
+  }
+  .single-news-card .cardbody ul.mb-4 {
+    margin-bottom: 15px !important;
+  }
+  /* Contact Area CSS */
+  .contact-items {
+    padding: 30px;
+  }
+  .contact-items .contact-shape {
+    display: none;
+  }
+  .contact-items .fs-40 {
+    font-size: 25px;
+  }
+  .contact-items .title {
+    margin-bottom: 25px;
+  }
+  .contact-items .title span {
+    display: inline-block !important;
+  }
+  .contact-items .b-btn {
+    text-align: start !important;
+  }
+  .contact-items.rounded-pill {
+    border-radius: 10px !important;
+  }
+  /* Footer Widget CSS */
+  .footer-widget .mb-4 {
+    margin-bottom: 15px !important;
+  }
+  .footer-widget ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  /* Footer Area CSS */
+  .footer-area .ps-1 {
+    padding-left: 0 !important;
+  }
+  .footer-area .ps-2 {
+    margin-right: 0;
+    padding-left: 0 !important;
+  }
+  .footer-area .ps-3 {
+    margin-right: 0;
+    padding-left: 0 !important;
+  }
+  .footer-area .ps-5 {
+    padding-left: 0 !important;
+  }
+  .footer-area .ps-100 {
+    padding-left: 0;
+  }
+  .footer-area .pse-100 {
+    margin-right: 0;
+    padding-left: 0;
+  }
+  .footer-area .pes-1 {
+    padding-left: 0 !important;
+  }
+  /* Copyright Area CSS */
+  .copyright-area1 .rowgap {
+    --bs-gutter-x: 20px;
+  }
+  /* Page Banner Area CSS */
+  .page-banner-area {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  /* Single Pricing Card */
+  .single-pricing-card {
+    padding: 25px 20px;
+  }
+  .single-pricing-card .p-list {
+    padding: 20px;
+  }
+  .single-pricing-card .p-list ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  /* Faq Content */
+  .faq-content .accordion-item .accordion-body {
+    padding: 20px;
+  }
+  .faq-content .accordion-item .accordion-button {
+    font-size: 15px;
+    padding: 20px;
+  }
+  /* Login Area */
+  .login-form {
+    padding: 25px;
+  }
+  .login-form .d-flex {
+    display: block !important;
+  }
+  .login-form .form-check {
+    margin-bottom: 15px;
+  }
+  /* Qoute Card */
+  .blog-content-details .qoute-card .icon {
+    margin-bottom: 15px;
+  }
+  .blog-content-details .qoute-card.d-flex {
+    display: block !important;
+  }
+  .blog-content-details .qoute-card p {
+    font-size: 20px;
+  }
+  .blog-content-details .tags {
+    margin-bottom: 15px !important;
+  }
+  .blog-content-details .share-tag .share {
+    text-align: start;
+  }
+  /* Comment Area */
+  .r-comment .u-image-13 {
+    margin-bottom: 20px;
+  }
+  .r-comment.d-flex {
+    display: block !important;
+  }
+  /* Single Careers Card */
+  .single-careers-card .c-card-body {
+    padding: 20px;
+  }
+  /* Card Button Style */
+  .card-btnstyle {
+    padding: 25px;
+  }
+  /* Map Area */
+  .map-area iframe {
+    height: 350px;
+  }
+  /* New Form */
+  .new-form {
+    margin-top: -120px;
+  }
+  .new-form-items {
+    padding: 20px;
+  }
+  /* Consultation Content */
+  .consultation-content .whate-items {
+    padding: 15px;
+  }
+  .consultation-content .whate-items .warp .d-block {
+    display: inline-block !important;
+  }
+  .consultation-content .whate-items .warp .icon {
+    width: 65px;
+    height: 40px;
+  }
+  .consultation-content .whate-items .warp .icon img {
+    max-width: 20px;
+  }
+  /* Preloader Area */
+  .container-preloader .animation-preloader .txt-loading {
+    font: bold 40px "Playfair Display", serif;
+  }
+}
+/* Min width 576px */
+/* Min width 768px*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Section Padding */
+  .ptb-120 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .pt-120 {
+    padding-top: 60px;
+  }
+  .pb-120 {
+    padding-bottom: 60px;
+  }
+  .ptb-100 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .pt-100 {
+    padding-top: 60px;
+  }
+  .pb-100 {
+    padding-bottom: 60px;
+  }
+  .ptb-80 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .pt-80px {
+    padding-top: 60px;
+  }
+  .pb-80px {
+    padding-bottom: 60px;
+  }
+  .mb-120 {
+    margin-bottom: 60px;
+  }
+  .fs-40 {
+    font-size: 30px;
+  }
+  /* Shapes Image */
+  .shapes-image {
+    display: none;
+  }
+  .shapes-images {
+    display: none;
+  }
+  /* Default Container */
+  .container-fluid.side-padding {
+    max-width: 720px;
+  }
+  /* Section Heading */
+  .section-heading h2 {
+    font-size: 35px;
+  }
+  /* Section Title */
+  .section-title h2 {
+    font-size: 35px;
+  }
+  /* Navbar */
+  .navbar .others-options {
+    right: 70px;
+    position: absolute;
+  }
+  .navbar.one .navbar-toggler .burger-menu span {
+    background-color: var(--dark) !important;
+  }
+  /* Hero Area CSS */
+  .hero-area {
+    padding-top: 160px;
+    padding-bottom: 60px;
+  }
+  .hero-content .hero-title {
+    margin-left: 0;
+  }
+  .hero-content .vedio-btn {
+    top: 50%;
+    left: 70px;
+    z-index: 1;
+    position: absolute;
+  }
+  .hero-content .hero-image {
+    margin-bottom: 0;
+  }
+  .hero-content .h-image-content {
+    text-align: center;
+    margin: auto;
+    max-width: 100% !important;
+  }
+  .hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+  }
+  .hero-content .live-card {
+    max-width: 510px !important;
+    margin-bottom: 0;
+    padding: 25px;
+    margin: auto !important;
+  }
+  /* Startup Banner Area CSS */
+  .startup-banner-area .advice-content1 li {
+    font-size: 80px;
+    letter-spacing: 8px;
+  }
+  .startup-banner-area .contant {
+    margin-top: 50px;
+    max-width: 100% !important;
+  }
+  .startup-banner-area .start-image .google-card {
+    left: -130px;
+  }
+  .startup-banner-area .start-image .default-btn {
+    top: 0;
+  }
+  .startup-banner-area .start-image .one {
+    top: 50px;
+    left: -45px;
+  }
+  /* Software Banner Area CSS */
+  .software-banner-area {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .software-banner-area .software-content {
+    margin-bottom: 30px;
+  }
+  .software-banner-area .software-content h1 {
+    margin-bottom: 20px;
+  }
+  .software-banner-area .software-content p {
+    margin-bottom: 20px;
+  }
+  .software-banner-area .software-content .cricle-content {
+    right: auto;
+    top: auto;
+    bottom: -355px;
+    left: -35px;
+    z-index: 2;
+  }
+  .software-banner-area .software-content .cricle-content .c-image {
+    max-width: 150px;
+  }
+  .software-banner-area .software-content .cricle-content .cricle i {
+    top: 30%;
+    left: 45px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+  .software-banner-area .banner-image {
+    width: 100%;
+    height: 500px;
+    z-index: 1;
+    border-radius: 10px;
+    position: relative;
+    background-size: cover;
+  }
+  /* Discover Area CSS */
+  .discover-area {
+    padding-top: 120px;
+    margin-top: -70px;
+  }
+  .discover-area .content p {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 25px;
+  }
+  /* Single Services Card */
+  .single-services-card {
+    padding: 25px;
+  }
+  .single-services-card .icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  .single-services-card img {
+    max-width: 50px;
+  }
+  /* Startup Service Area CSS */
+  .startup-service-area .top-bar h2 span {
+    display: inline-block !important;
+  }
+  .startup-service-area .startup-service-card {
+    padding: 30px 25px;
+  }
+  .startup-service-area .startup-service-card h1 {
+    font-size: 80px;
+    margin-bottom: 80px;
+  }
+  /* About Area CSS */
+  .about-area .section-heading {
+    max-width: 100% !important;
+  }
+  .about-image .style-1 {
+    bottom: 240px;
+    right: auto;
+    left: -40px;
+  }
+  .about-image .style-2 {
+    right: auto !important;
+  }
+  .about-image .card1 {
+    right: auto;
+  }
+  /* Software About Area CSS */
+  .software-about-area .s-about-content {
+    max-width: 100% !important;
+  }
+  .software-about-area .s-about-image .shape {
+    display: none;
+  }
+  /* Funfact Area CSS */
+  .funfact-area .f-title {
+    text-align: center;
+  }
+  .funfact-area .rowgap.g-4, .funfact-area .rowgap .gx-4 {
+    --bs-gutter-x: 30px;
+  }
+  /* Second Funfact Area CSS */
+  .s-funfact-area .rowgap {
+    --bs-gutter-x: 20px;
+  }
+  /* Industry Area CSS */
+  .industry-area .nav-items .i-tabs {
+    margin-left: 0;
+  }
+  .industry-area .idustry-image .count-card {
+    left: auto;
+    right: 0;
+  }
+  /* Industry Area CSS */
+  .industry-area .i-warps .style-1 {
+    left: 0;
+    max-width: 450px;
+    padding: 20px;
+  }
+  /* Case Area CSS */
+  .case-area .container-fluid {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+  .case-area .case-warps-items {
+    margin: 0;
+  }
+  .case-area .case-card .cardbody {
+    padding: 25px;
+    right: 0;
+  }
+  .case-area .case-card .cardbody .fs-24 {
+    font-size: 20px;
+  }
+  /* Schedule Area CSS */
+  .schedule-area .sechudule-image {
+    height: 500px;
+    margin-bottom: 25px;
+  }
+  .schedule-area .sechudule-image .card {
+    top: -100px;
+  }
+  .schedule-area .sechudule-image .card .mb-4 {
+    margin-bottom: 10px !important;
+  }
+  .schedule-area .sechudule-image .card ul li {
+    margin-bottom: 10px;
+  }
+  .schedule-area .consultation-form {
+    padding: 30px;
+  }
+  /* Peace Area CSS */
+  .peace-area .rowgap {
+    --bs-gutter-x: 25px;
+  }
+  /* Consultation Area CSS */
+  .consultation-area {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .consultation-form {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 35px 25px;
+  }
+  /* Software Consultation Area CSS */
+  .software-consultation-area {
+    padding-bottom: 60px;
+  }
+  .software-consultation-area::before {
+    display: none;
+  }
+  .software-consultation-area .consultation-form {
+    max-width: 100% !important;
+  }
+  /* Testimono Area CSS */
+  .testimonials-content {
+    padding: 110px 25px 0;
+  }
+  .testimonials-content .t-title span {
+    display: inline-block !important;
+  }
+  .testimonials-content .t-title h2 {
+    font-size: 18px;
+  }
+  .testimonials-content .default-btn {
+    padding: 10px 20px 11px 20px;
+    font-size: 15px;
+  }
+  .testimono-card {
+    padding: 25px;
+  }
+  .testimono-card .user {
+    margin-bottom: 20px;
+  }
+  /* Clients Area CSS */
+  .clients-area .c-image .u-image1 {
+    right: 180px;
+  }
+  .clients-area .c-image .u-image2 {
+    right: 150px;
+  }
+  /* Vedio Area CSS */
+  .vedio-area {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .vedio-area .vedio-area h2 {
+    margin-bottom: 50px;
+  }
+  .vedio-area .popup-btn i {
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+  }
+  .vedio-area .popup-btn i::after {
+    width: 80px;
+    height: 80px;
+  }
+  /* Choose Us Area CSS */
+  .choose-us-area .section-heading .shape3 {
+    display: none;
+  }
+  .choose-us-area .c-image .shape1 {
+    top: -50px;
+    left: 260px;
+  }
+  .choose-us-area .c-image .shape {
+    bottom: 110px;
+    left: -35px;
+  }
+  .choose-us-area .main-shape {
+    display: none;
+  }
+  /* Second Choose Area CSS */
+  .second-choose-area .s-choose-image {
+    bottom: 0;
+  }
+  .second-choose-area .s-choose-image .default-btn {
+    top: 10%;
+    left: 0;
+  }
+  .second-choose-area .s-choose-image .form-control {
+    top: 60%;
+    left: 0;
+    max-width: 100%;
+  }
+  /* Contact Area CSS */
+  .contact-items {
+    padding: 50px;
+  }
+  .contact-items .title span {
+    display: inline-block !important;
+  }
+  .contact-items .contact-shape {
+    max-width: 425px;
+  }
+  /* Single Blog Card */
+  .single-blog-card .card-body {
+    padding: 20px 10px 30px;
+  }
+  .single-blog-card .card-body .items li {
+    font-size: 14px;
+  }
+  /* Single News Card */
+  .single-news-card .cardbody {
+    padding: 15px;
+  }
+  .single-news-card .cardbody .fs-24 {
+    font-size: 18px;
+  }
+  .single-news-card .cardbody h3 {
+    margin-bottom: 15px;
+  }
+  .single-news-card .cardbody ul li {
+    font-size: 13px;
+  }
+  .single-news-card .cardbody ul span a {
+    font-size: 13px;
+  }
+  .single-news-card .cardbody ul.mb-4 {
+    margin-bottom: 15px !important;
+  }
+  /* Footer Area CSS */
+  .footer-area .ps-2 {
+    margin-right: -35px;
+    padding-left: 0 !important;
+  }
+  .footer-area .ps-3 {
+    margin-right: 0;
+  }
+  .footer-area .ps-1 {
+    padding-left: 125px !important;
+  }
+  .footer-area .pes-1 {
+    padding-left: 0 !important;
+  }
+  .footer-area .pse-100 {
+    margin-right: 0;
+  }
+  /* Copyright Area CSS */
+  .copyright-area1 .rowgap {
+    --bs-gutter-x: 25px;
+  }
+  /* Page Banner Area CSS */
+  .page-banner-area {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+  /* Login Area */
+  .login-form {
+    padding: 25px;
+  }
+  .login-form .d-flex {
+    display: block !important;
+  }
+  .login-form .form-check {
+    margin-bottom: 15px;
+  }
+  /* Single Pricing Card */
+  .single-pricing-card {
+    padding: 25px 20px;
+  }
+  .single-pricing-card .p-list {
+    padding: 20px;
+  }
+  .single-pricing-card .p-list ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  /* Single Careers Card */
+  .single-careers-card .c-card-body {
+    padding: 20px;
+  }
+  .single-careers-card .c-card-body .fs-25 {
+    font-size: 22px;
+  }
+  /* Map Area */
+  .map-area iframe {
+    height: 500px;
+  }
+  /* New Form */
+  .new-form {
+    margin-top: -120px;
+  }
+  .new-form-items {
+    padding: 20px;
+  }
+  /* Consultation Content */
+  .consultation-content .whate-items {
+    padding: 15px;
+  }
+  .consultation-content .whate-items .warp .d-block {
+    display: inline-block !important;
+  }
+  .consultation-content .whate-items .warp .icon {
+    width: 65px;
+    height: 40px;
+  }
+  .consultation-content .whate-items .warp .icon img {
+    max-width: 20px;
+  }
+}
+/* Min width 992px*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Section Padding */
+  .ptb-120 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .pt-120 {
+    padding-top: 80px;
+  }
+  .pb-120 {
+    padding-bottom: 80px;
+  }
+  .ptb-100 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .pt-100 {
+    padding-top: 80px;
+  }
+  .pb-100 {
+    padding-bottom: 80px;
+  }
+  .ptb-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .pt-80px {
+    padding-top: 80px;
+  }
+  .pb-80px {
+    padding-bottom: 80px;
+  }
+  .mb-120 {
+    margin-bottom: 80px;
+  }
+  /* Section Heading */
+  .section-heading h2 {
+    font-size: 40px;
+  }
+  /* Section title */
+  .section-title h2 {
+    font-size: 40px;
+  }
+  /* Default Container */
+  .container-fluid.side-padding {
+    max-width: 960px;
+  }
+  /* Navbar */
+  .navbar-expand-lg .navbar-toggler {
+    display: block;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: none !important;
+  }
+  .navbar-expand-lg .navbar-nav {
+    display: none;
+  }
+  /* Navbar */
+  .navbar .others-options {
+    right: 70px;
+    position: absolute;
+  }
+  .navbar.one .navbar-toggler .burger-menu span {
+    background-color: var(--dark) !important;
+  }
+  /* Hero Area CSS */
+  .hero-area {
+    padding-top: 160px;
+    padding-bottom: 60px;
+  }
+  .hero-content .hero-title {
+    margin-left: 0;
+  }
+  .hero-content .vedio-btn {
+    top: 50%;
+    left: 70px;
+    z-index: 1;
+    position: absolute;
+  }
+  .hero-content .hero-image {
+    margin-bottom: 0;
+  }
+  .hero-content .h-image-content {
+    text-align: center;
+    margin: auto;
+    max-width: 100% !important;
+  }
+  .hero-content h1 {
+    font-size: 52px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+  }
+  .hero-content .live-card {
+    max-width: 510px !important;
+    margin-bottom: 0;
+    padding: 25px;
+    margin: auto !important;
+  }
+  .hero-content .live-card::before {
+    bottom: 65px;
+  }
+  /* Startup Banner Area CSS */
+  .startup-banner-area .contant {
+    max-width: 100% !important;
+  }
+  .startup-banner-area .start-image .google-card {
+    left: -110px;
+  }
+  .startup-banner-area .start-image .shape2 {
+    top: 30px;
+    left: 0;
+  }
+  .startup-banner-area .start-image .one {
+    left: -30px;
+  }
+  .startup-banner-area .shape1 {
+    bottom: auto;
+    left: 70%;
+    top: 40%;
+    position: absolute;
+  }
+  /* Software Banner Area CSS */
+  .software-banner-area {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .software-banner-area .software-content {
+    margin-bottom: 30px;
+  }
+  .software-banner-area .software-content .fs-60 {
+    font-size: 43px;
+  }
+  .software-banner-area .software-content h1 {
+    margin-bottom: 20px;
+  }
+  .software-banner-area .software-content p {
+    margin-bottom: 20px;
+  }
+  .software-banner-area .software-content .cricle-content {
+    right: -145px;
+    top: 30%;
+    z-index: 2;
+  }
+  .software-banner-area .software-content .cricle-content .c-image {
+    max-width: 150px;
+  }
+  .software-banner-area .software-content .cricle-content .cricle i {
+    top: 30%;
+    left: 45px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+  .software-banner-area .banner-image {
+    width: 50%;
+    z-index: 1;
+    border-radius: 10px;
+    background-size: cover;
+  }
+  .software-banner-area .shapes-image {
+    display: none;
+  }
+  /* Software About Area CSS */
+  .software-about-area {
+    padding-bottom: 60px;
+  }
+  .software-about-area::before {
+    display: none;
+  }
+  .software-about-area .s-about-content {
+    margin-bottom: 25px;
+  }
+  .software-about-area .s-about-content .tab-items {
+    margin-bottom: 20px;
+  }
+  .software-about-area .s-about-content .mt-1 {
+    margin-top: 30px !important;
+  }
+  .software-about-area .shape1 {
+    display: none;
+  }
+  /* Discover Area CSS */
+  .discover-area .shape {
+    max-width: 180px;
+  }
+  .discover-area .shape2 {
+    top: 65px;
+    max-width: 310px;
+  }
+  /* Single Services Card */
+  .single-services-card {
+    padding: 25px;
+  }
+  .single-services-card .icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  .single-services-card img {
+    max-width: 50px;
+  }
+  .single-services-card .fs-25 {
+    font-size: 20px;
+  }
+  /* Startup Service Area CSS */
+  .startup-service-area .top-bar h2 span {
+    display: inline-block !important;
+  }
+  .startup-service-area .startup-service-card {
+    padding: 30px 25px;
+  }
+  .startup-service-area .startup-service-card h1 {
+    font-size: 80px;
+    margin-bottom: 80px;
+  }
+  .startup-service-area .startup-service-card .fs-25 {
+    font-size: 20px;
+  }
+  /* About Area CSS */
+  .about-area .section-heading {
+    max-width: 100% !important;
+  }
+  .about-image {
+    text-align: center;
+  }
+  .about-image .style-1 {
+    right: 40px;
+    bottom: 265px;
+    right: auto;
+    left: 0 !important;
+  }
+  .about-image .card1 {
+    right: auto;
+    left: 120px;
+  }
+  .about-image .style-2 {
+    right: auto !important;
+  }
+  /* Funfact Area CSS */
+  .funfact-area .f-title {
+    text-align: center;
+  }
+  .funfact-area .rowgap.g-4, .funfact-area .rowgap .gx-4 {
+    --bs-gutter-x: 20px;
+  }
+  .funfact-area .funfact-card img {
+    max-width: 50px;
+  }
+  .funfact-area .funfact-card .fs-64 {
+    font-size: 40px;
+  }
+  /* Second Funfact Area CSS */
+  .s-funfact-area .rowgap {
+    --bs-gutter-x: 40px;
+  }
+  /* Second About Area CSS */
+  .second-about-area .section-heading {
+    max-width: 100% !important;
+  }
+  /* Industry Area CSS */
+  .industry-area .nav-items .i-tabs {
+    margin-left: 120px;
+  }
+  .industry-area .idustry-image {
+    text-align: center;
+  }
+  .industry-area .idustry-image .count-card {
+    left: auto;
+    right: 0;
+  }
+  /* Industry Area CSS */
+  .industry-area .i-warps .style-1 {
+    left: 0;
+    max-width: 450px;
+    padding: 20px;
+  }
+  /* Schedule Area CSS */
+  .schedule-area .sechudule-image .card {
+    padding: 25px;
+  }
+  .schedule-area .sechudule-image .card .mb-4 {
+    margin-bottom: 15px !important;
+  }
+  .schedule-area .sechudule-image .card ul li {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .schedule-area .consultation-form {
+    padding: 25px;
+  }
+  /* Peace Area CSS */
+  .peace-area .rowgap {
+    --bs-gutter-x: 25px;
+  }
+  /* Consultation Area CSS */
+  .consultation-area {
+    margin-bottom: 30px;
+  }
+  .consultation-area .fs-50 {
+    font-size: 40px;
+  }
+  .consultation-form {
+    padding: 40px 30px;
+    margin-bottom: -30px;
+  }
+  /* Software Consultation Area CSS */
+  .software-consultation-area .cricle-content {
+    margin-left: 60px;
+  }
+  /* Testimono Area CSS */
+  .testimonials-content {
+    padding: 30px 30px 0;
+  }
+  .testimonials-content .t-title span {
+    display: inline-block !important;
+  }
+  .testimonials-content .t-title h2 {
+    font-size: 25px;
+  }
+  .testimono-card {
+    padding: 25px;
+  }
+  .testimono-card .fs-20 {
+    font-size: 18px;
+  }
+  /* Clients Area CSS */
+  .clients-area .c-image img {
+    width: 350px;
+    height: 350px;
+  }
+  .clients-area .c-content .c-qoute {
+    top: -20px;
+    max-width: 120px;
+  }
+  /* Choose Us Area CSS */
+  .choose-us-area .section-heading .style-2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .choose-us-area .section-heading .shape3 {
+    display: none;
+  }
+  .choose-us-area .c-image .shape {
+    display: none;
+  }
+  .choose-us-area .c-image .shape1 {
+    display: none;
+  }
+  /* Second Choose Area CSS */
+  .second-choose-area .s-choose-image {
+    bottom: 0px;
+  }
+  /* Single Blog Card */
+  .single-blog-card .card-body {
+    padding: 25px 10px 30px;
+  }
+  .single-blog-card .card-body .fs-25 {
+    font-size: 20px;
+  }
+  .single-blog-card .card-body .items li {
+    font-size: 14px;
+  }
+  /* Single Article Card */
+  .single-article-card .fs-24 {
+    font-size: 20px;
+  }
+  /* Footer Area CSS */
+  .footer-area .ps-1 {
+    padding-left: 50px !important;
+  }
+  .footer-area .ps-2 {
+    margin-right: -25px;
+    padding-left: 75px !important;
+  }
+  .footer-area .ps-3 {
+    margin-right: -60px;
+    padding-left: 40px !important;
+  }
+  .footer-area .pes-1 {
+    padding-left: 50px !important;
+  }
+  .footer-area .pse-100 {
+    margin-right: -35px;
+    padding-left: 20px;
+  }
+  .footer-area .ps-100 {
+    padding-left: 0;
+  }
+  /* Login Area */
+  .login-form {
+    padding: 25px;
+  }
+  /* Copyright Area CSS */
+  .copyright-area1 .rowgap {
+    --bs-gutter-x: 25px;
+  }
+  .copyright-area1 .fs-25 {
+    font-size: 20px;
+  }
+  /* Single Pricing Card */
+  .single-pricing-card {
+    padding: 25px 20px;
+  }
+  .single-pricing-card .p-list {
+    padding: 20px;
+  }
+  .single-pricing-card .p-list ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  /* Default List */
+  .default-list li {
+    margin-bottom: 10px !important;
+  }
+  .default-list li.fs-18 {
+    font-size: 16px;
+  }
+  .default-list li:last-child {
+    margin-bottom: 0;
+  }
+  /* Contact Card */
+  .l-sidebar .contact-card .fs-48 {
+    font-size: 30px;
+  }
+  .l-sidebar .overview-card ul li {
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  /* Single Careers Card */
+  .single-careers-card .c-card-body {
+    padding: 20px;
+  }
+  .single-careers-card .c-card-body .fs-25 {
+    font-size: 20px;
+  }
+  /* Choose Us Area CSS */
+  .choose-us-area .section-heading .warp-card {
+    padding: 20px;
+  }
+}
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  /* Default Container */
+  .container-fluid.side-padding {
+    max-width: 1140px;
+  }
+  /* Navbar */
+  .navbar .navbar-brand {
+    margin-right: 0;
+  }
+  .navbar .navbar-nav .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .navbar .navbar-nav .nav-item .nav-link.dropdown-toggle {
+    padding-right: 15px;
+  }
+  .navbar .others-options ul li {
+    margin-right: 10px;
+  }
+  .navbar .others-options ul li .search1 {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .navbar .others-options ul .default-btn {
+    padding: 14px 25px 12px 20px;
+  }
+  /* Hero Area CSS */
+  .hero-content .hero-title {
+    margin-left: -50px;
+  }
+  .hero-content .hero-title .fs-48 {
+    font-size: 35px;
+  }
+  .hero-content .hero-image {
+    margin-bottom: -160px;
+  }
+  .hero-content h1 {
+    font-size: 61px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+  }
+  .hero-content .live-card {
+    padding: 25px 20px;
+    margin-bottom: -80px;
+  }
+  .hero-content .live-card h3 {
+    margin-bottom: 15px;
+  }
+  .hero-content .live-card .fs-22 {
+    font-size: 18px;
+  }
+  .hero-content .live-card .fs-36 {
+    font-size: 25px;
+  }
+  .hero-content .live-card ul {
+    display: block !important;
+  }
+  .hero-content .live-card ul li {
+    margin-bottom: 8px;
+  }
+  .hero-content .live-card ul:last-child {
+    margin-bottom: 0;
+  }
+  .hero-content .live-card::before {
+    bottom: 70px;
+  }
+  /* Startup Banner Area CSS */
+  .startup-banner-area {
+    padding-bottom: 120px;
+  }
+  .startup-banner-area .start-image {
+    margin-left: 0;
+  }
+  .startup-banner-area .start-image .google-card {
+    bottom: -35px;
+    left: -35px;
+  }
+  .startup-banner-area .start-image .shape2 {
+    top: 70px;
+    left: 15px;
+    max-width: 30px;
+  }
+  .startup-banner-area .start-image .default-btn {
+    top: 160px;
+    right: -40px;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+  }
+  .startup-banner-area .start-image .one {
+    top: 120px;
+    left: -25px;
+    right: auto;
+  }
+  .startup-banner-area .shape1 {
+    bottom: 75px;
+    left: 25%;
+    max-width: 85px;
+  }
+  /* Software Banner Area CSS */
+  .software-banner-area {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .software-banner-area .software-content {
+    margin-bottom: 30px;
+  }
+  .software-banner-area .software-content .fs-60 {
+    font-size: 50px;
+  }
+  .software-banner-area .software-content h1 {
+    margin-bottom: 20px;
+  }
+  .software-banner-area .software-content p {
+    margin-bottom: 20px;
+  }
+  .software-banner-area .software-content .cricle-content {
+    right: -145px;
+    top: 30%;
+    z-index: 2;
+  }
+  .software-banner-area .software-content .cricle-content .c-image {
+    max-width: 150px;
+  }
+  .software-banner-area .software-content .cricle-content .cricle i {
+    top: 30%;
+    left: 45px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+  .software-banner-area .banner-image {
+    background-size: cover;
+  }
+  .software-banner-area .shapes-image {
+    display: none;
+  }
+  /* Discover Area CSS */
+  .discover-area .shape2 {
+    top: 95px;
+    right: 0;
+    max-width: 330px;
+  }
+  .discover-area .shape {
+    max-width: 245px;
+  }
+  /* Single Services Card */
+  .single-services-card {
+    padding: 35px;
+  }
+  /* Single Features Card */
+  .single-features-card {
+    padding: 25px;
+  }
+  .single-features-card img {
+    max-width: 60px;
+    margin-bottom: 20px;
+  }
+  /* Startup Service Area CSS */
+  .startup-service-area .top-bar h2 span {
+    display: inline-block !important;
+  }
+  .startup-service-area .startup-service-card .fs-25 {
+    font-size: 20px;
+  }
+  /* About Area CSS */
+  .about-area .section-heading h2 {
+    font-size: 33px;
+  }
+  .about-image .card1 {
+    top: 80px;
+    padding: 10px 45px 10px 14px;
+  }
+  .about-image .style-1 {
+    right: auto;
+    left: -25px;
+    top: auto !important;
+  }
+  .about-image .style-2 {
+    top: auto !important;
+  }
+  /* Software About Area CSS */
+  .software-about-area::before {
+    height: 60px;
+  }
+  /* Funfact Area CSS */
+  .funfact-area .f-title {
+    text-align: center;
+  }
+  .funfact-area .rowgap.g-4, .funfact-area .rowgap .gx-4 {
+    --bs-gutter-x: 80px;
+  }
+  .funfact-area .funfact-card img {
+    max-width: 50px;
+  }
+  .funfact-area .funfact-card .fs-64 {
+    font-size: 50px;
+  }
+  /* Second Funfact Area CSS */
+  .s-funfact-area .rowgap {
+    --bs-gutter-x: 80px;
+  }
+  /* Second About Area CSS */
+  .second-about-area .section-heading {
+    max-width: 100% !important;
+  }
+  .second-about-area .section-heading h2 {
+    font-size: 35px;
+  }
+  .second-about-area .section-heading span {
+    display: inline-block !important;
+  }
+  .second-about-area .section-heading p {
+    margin-bottom: 25px;
+  }
+  .second-about-area .section-heading .warps {
+    gap: 10px !important;
+  }
+  .second-about-area .section-heading .warps .fs-20 {
+    font-size: 18px;
+  }
+  .second-about-area .section-heading .warps img {
+    max-width: 55px;
+  }
+  .second-about-area .a-image .shape {
+    right: 0;
+  }
+  .second-about-area .a-image .shape1 {
+    left: 0;
+  }
+  /* Industry Area CSS */
+  .industry-area .nav-link {
+    font-size: 13px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+  }
+  .industry-area .idustry-image .count-card {
+    left: 0;
+    right: auto;
+  }
+  .industry-area .nav-items .i-tabs {
+    margin-left: 0px;
+  }
+  /* Consultation Area CSS */
+  .consultation-content .whate-items {
+    padding: 25px;
+  }
+  /* Testimono Area CSS */
+  .testimonials-content {
+    padding: 50px 30px 0;
+  }
+  /* Clients Area CSS */
+  .clients-area .c-image .u-image2 {
+    top: 76%;
+    right: -15px;
+  }
+  /* Choose Us Area CSS */
+  .choose-us-area .main-shape {
+    top: 30px;
+    right: 50px;
+  }
+  .choose-us-area .c-image .shape1 {
+    top: -55px;
+    left: 185px;
+  }
+  .choose-us-area .c-image .shape {
+    bottom: 110px;
+    left: 0;
+    max-width: 100px;
+  }
+  /* Second Choose Area CSS */
+  .second-choose-area .section-heading {
+    margin-bottom: 30px;
+  }
+  .second-choose-area .s-content .s-choose-card {
+    padding: 20px;
+  }
+  .second-choose-area .s-content .s-choose-card .mb-3 {
+    margin-bottom: 10px !important;
+  }
+  .second-choose-area .s-content .s-choose-card .fs-24 {
+    font-size: 18px;
+  }
+  .second-choose-area .s-content .s-choose-card p {
+    font-size: 13px;
+  }
+  .second-choose-area .s-choose-image .form-control {
+    left: 20px;
+    max-width: 100%;
+  }
+  .second-choose-area .s-choose-image .default-btn {
+    top: 0;
+    left: 0;
+  }
+  /* Single News Card */
+  .single-news-card .cardbody {
+    padding: 20px;
+  }
+  .single-news-card .cardbody .fs-24 {
+    font-size: 20px;
+  }
+  .single-news-card .cardbody h3 {
+    margin-bottom: 15px;
+  }
+  .single-news-card .cardbody ul li {
+    font-size: 13px;
+  }
+  .single-news-card .cardbody ul span a {
+    font-size: 13px;
+  }
+  .single-news-card .cardbody ul.mb-4 {
+    margin-bottom: 15px !important;
+  }
+  /* Footer Area CSS */
+  .footer-area .ps-1 {
+    padding-left: 50px !important;
+  }
+  .footer-area .ps-2 {
+    margin-right: -25px;
+    padding-left: 75px !important;
+  }
+  .footer-area .ps-3 {
+    margin-right: -60px;
+    padding-left: 40px !important;
+  }
+  .footer-area .pse-100 {
+    margin-right: -90px;
+    padding-left: 60px;
+  }
+  .footer-area .pes-1 {
+    padding-left: 95px !important;
+  }
+  .footer-area .ps-100 {
+    padding-left: 50px;
+  }
+  /* Copyright Area CSS */
+  .copyright-area1 .rowgap {
+    --bs-gutter-x: 25px;
+  }
+  /* Contact Card */
+  .l-sidebar .contact-card .fs-48 {
+    font-size: 30px;
+  }
+  /* Single Careers Card */
+  .single-careers-card .c-card-body {
+    padding: 20px;
+  }
+  /* Card Button Style */
+  .card-btnstyle {
+    padding: 25px;
+  }
+}
+/* Min width 1400px */
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  /* Default Container */
+  .container-fluid.side-padding {
+    max-width: 1320px;
+  }
+  /* Navbar */
+  .navbar .navbar-brand {
+    margin-right: 0;
+  }
+  .navbar .navbar-nav .nav-item {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .navbar .navbar-nav .nav-item .nav-link.dropdown-toggle {
+    padding-right: 15px;
+  }
+  /* Hero Area CSS */
+  .hero-content h1 {
+    font-size: 68px;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+  }
+  .hero-content .live-card {
+    margin-bottom: -90px;
+    padding: 30px 25px;
+  }
+  .hero-content .live-card h3 {
+    margin-bottom: 15px;
+  }
+  .hero-content .live-card .fs-22 {
+    font-size: 20px;
+  }
+  .hero-content .live-card .fs-36 {
+    font-size: 25px;
+  }
+  .hero-content .live-card a {
+    font-size: 13px;
+  }
+  .hero-content .live-card::before {
+    bottom: 65px;
+  }
+  .hero-content .hero-title {
+    margin-left: -50px;
+  }
+  .hero-content .hero-title .fs-48 {
+    font-size: 40px;
+  }
+  .hero-content .hero-image {
+    margin-bottom: -110px;
+  }
+  /* Startup Banner Area CSS */
+  .startup-banner-area .start-image {
+    margin-left: 0;
+  }
+  .startup-banner-area .start-image .google-card {
+    bottom: 135px;
+    left: -55px;
+  }
+  .startup-banner-area .start-image .shape2 {
+    top: 130px;
+    left: -100px;
+    max-width: 50px;
+  }
+  .startup-banner-area .start-image .one {
+    right: auto;
+    left: -40px;
+  }
+  .startup-banner-area .start-image .default-btn {
+    padding: 12px 20px 13px 20px;
+  }
+  .startup-banner-area .shape1 {
+    bottom: 50px;
+    left: 20%;
+    max-width: 80px;
+  }
+  .startup-banner-area .contant {
+    max-width: 570px !important;
+  }
+  /* Software Banner Area CSS */
+  .software-banner-area .software-content .fs-60 {
+    font-size: 50px;
+  }
+  .software-banner-area .software-content .cricle-content {
+    top: 30%;
+    right: -110px;
+  }
+  .software-banner-area .software-content .cricle-content .c-image {
+    max-width: 150px;
+  }
+  .software-banner-area .software-content .cricle-content .cricle i {
+    top: 30%;
+    left: 45px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+  .software-banner-area .shape-4 {
+    right: 29%;
+  }
+  .software-banner-area .shape-2 {
+    right: 29%;
+  }
+  .software-banner-area .shape-3 {
+    right: 580px;
+    top: 110px;
+  }
+  .software-banner-area .shape-1 {
+    right: 580px;
+    bottom: 110px;
+  }
+  .software-banner-area .banner-image {
+    -webkit-clip-path: polygon(100% 0%, 100% 55%, 100% 100%, 30% 100%, 0% 50%, 30% 0%);
+            clip-path: polygon(100% 0%, 100% 55%, 100% 100%, 30% 100%, 0% 50%, 30% 0%);
+  }
+  /* Discover Area CSS */
+  .discover-area .shape {
+    max-width: 280px;
+  }
+  .discover-area .shape2 {
+    top: 95px;
+    max-width: 400px;
+  }
+  /* About Area CSS */
+  .about-image .style-1 {
+    right: auto;
+    left: -45px;
+  }
+  /* Second About Area CSS */
+  .second-about-area .section-heading {
+    max-width: 100% !important;
+  }
+  .second-about-area .section-heading span {
+    display: inline-block !important;
+  }
+  /* Startup Service Area CSS */
+  .startup-service-area .top-bar h2 span {
+    display: inline-block !important;
+  }
+  .startup-service-area .startup-service-card {
+    padding: 40px 30px;
+  }
+  .startup-service-area .startup-service-card .fs-25 {
+    font-size: 20px;
+  }
+  /* Funfact Area CSS */
+  .funfact-area .f-title {
+    text-align: center;
+  }
+  .funfact-area .rowgap.g-4, .funfact-area .rowgap .gx-4 {
+    --bs-gutter-x: 95px;
+  }
+  .funfact-area .funfact-card img {
+    max-width: 50px;
+  }
+  .funfact-area .funfact-card .fs-64 {
+    font-size: 50px;
+  }
+  /* Second Funfact Area CSS */
+  .s-funfact-area .rowgap {
+    --bs-gutter-x: 100px;
+  }
+  /* Second Choose Area CSS */
+  .second-choose-area .section-heading {
+    margin-bottom: 30px;
+  }
+  .second-choose-area .s-content .s-choose-card .mb-3 {
+    margin-bottom: 10px !important;
+  }
+  .second-choose-area .s-content .s-choose-card .fs-24 {
+    font-size: 18px;
+  }
+  .second-choose-area .s-choose-image .form-control {
+    left: 0;
+  }
+  .second-choose-area .s-choose-image .default-btn {
+    top: 40px;
+    left: 30px;
+  }
+  /* Industry Area CSS */
+  .industry-area .idustry-image .count-card {
+    right: 0;
+  }
+}
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) and (max-width: 1899px) {
+  /* Default Container */
+  .container-fluid.side-padding {
+    max-width: 1520px;
+  }
+  /* Hero Area CSS */
+  .hero-content .hero-title {
+    margin-left: -65px;
+  }
+  .hero-content .live-card {
+    padding: 30px 30px;
+    margin-bottom: -130px;
+  }
+  .hero-content .live-card h3 {
+    margin-bottom: 25px;
+  }
+  .hero-content .live-card::before {
+    bottom: 70px;
+  }
+  .hero-content h1 {
+    font-size: 83px;
+    letter-spacing: 0px;
+  }
+  /* Startup Banner Area CSS */
+  .startup-banner-area .start-image .shape1 {
+    top: 70px;
+    left: -115px;
+  }
+  .startup-banner-area .start-image .shape2 {
+    top: 200px;
+    left: -120px;
+  }
+  /* Software Banner Area CSS */
+  .software-banner-area {
+    background-position: -170px center;
+  }
+  .software-banner-area .shape-4 {
+    right: 33%;
+  }
+  .software-banner-area .shape-3 {
+    right: 665px;
+    top: 110px;
+  }
+  .software-banner-area .shape-2 {
+    right: 33%;
+  }
+  .software-banner-area .shape-1 {
+    right: 665px;
+    bottom: 85px;
+  }
+  .software-banner-area .software-content .fs-60 {
+    font-size: 50px;
+  }
+  .software-banner-area .software-content .cricle-content {
+    top: 25%;
+    right: -225px;
+  }
+  .software-banner-area .software-content .cricle-content .c-image {
+    max-width: 200px;
+  }
+  .software-banner-area .software-content .cricle-content .cricle i {
+    top: 30%;
+    left: 60px;
+    width: 80px;
+    height: 80px;
+    font-size: 35px;
+  }
+  /* Discover Area CSS */
+  .discover-area .shape2 {
+    top: 95px;
+  }
+  /* About Area CSS */
+  .about-image .style-1 {
+    right: auto;
+    left: -130px;
+  }
+  /* Startup Service Area CSS */
+  .startup-service-area .startup-service-card {
+    padding: 40px 30px;
+  }
+  /* Funfact Area CSS */
+  .funfact-area .rowgap.g-4, .funfact-area .rowgap .gx-4 {
+    --bs-gutter-x: 130px;
+  }
+  /* Case Area CSS */
+  .case-area .case-card .fs-24 {
+    font-size: 20px;
+  }
+  /* Second Choose Area CSS */
+  .second-choose-area .section-heading {
+    margin-bottom: 30px;
+  }
+  .second-choose-area .s-content .s-choose-card {
+    padding: 25px;
+  }
+  .second-choose-area .s-content .s-choose-card .mb-3 {
+    margin-bottom: 10px !important;
+  }
+  .second-choose-area .s-content .s-choose-card .fs-24 {
+    font-size: 20px;
+  }
+  .second-choose-area .s-choose-image .form-control {
+    left: 0;
+  }
+  .second-choose-area .s-choose-image .default-btn {
+    left: 30px;
+  }
+}
+/* Min width 2000px */
+@media only screen and (min-width: 2000px) {
+  /* Software Banner Area CSS */
+  .software-banner-area {
+    background-position: 275px center;
+  }
+  .software-banner-area .shape-4 {
+    right: 38%;
+  }
+  .software-banner-area .shape-3 {
+    right: 44%;
+  }
+  .software-banner-area .shape-2 {
+    right: 38%;
+  }
+  .software-banner-area .shape-1 {
+    right: 44%;
+  }
+}/*# sourceMappingURL=responsive.css.map */

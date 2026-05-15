@@ -1,0 +1,289 @@
+{% extends "public/includes/base.html" %}
+
+{% load i18n static %}
+
+{% block title %} {% trans "À Propos" %} - {{ site_name }} {% endblock title %}
+
+{% block content %}
+    <!-- Start Page Banner Area -->
+    <div class="page-banner-area position-relative z-1 overflow-hidden" style="background-image: url({% static 'assets/images/hero/page-banner.jpg' %});">
+        <div class="container">
+            <div class="page-title text-center">
+                <h3 class="text-white fs-50 mb-2">{% trans "À Propos" %}</h3>
+                <ul class="pe-0 ps-0 mb-0 list-unstyled">
+                    <li><a href="{% url 'core:home' %}">{% trans "Accueil" %}</a></li>
+                    <li><span class="active">{% trans "À Propos" %}</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Page Banner Area -->
+
+
+
+    <!-- Start About Area -->
+    <div class="about-area ptb-120 bg-rgb">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-xl-6 col-lg-12">
+                    <div class="section-heading mb-0 slide-top" style="max-width: 600px;">
+                        <h2 class="mb-4">
+                            
+                            {% blocktrans %}
+                                Concevoir des solutions plus intelligentes, 
+                                plus rapides et plus sécurisées grâce à des services et du conseil de pointe.
+                            {% endblocktrans %}
+                            
+                        </h2>
+                        <p>
+                            
+                            {% blocktrans %}
+                                Nous offrons une gamme complète de services couvrant la gouvernance IT, la cybersécurité, 
+                                la gestion des risques, l'audit et l'optimisation des processus.
+                                Notre équipe d'experts combine expertise technique et vision 
+                                stratégique pour délivrer des solutions à forte valeur ajoutée.
+                            {% endblocktrans %}
+                            
+                        </p>
+                        <ul class="pe-0 ps-0 list-unstyled">
+                            <li class="d-flex align-items-center gap-2">
+                                <i class="ti ti-circle-dashed-check"></i>
+                                {% trans "Expertise Sectorielle" %}
+                            </li>
+                            <li class="d-flex align-items-center gap-2">
+                                <i class="ti ti-circle-dashed-check"></i>
+                                {% trans "Indépendance & Objectivité" %}
+                            </li>
+                            <li class="d-flex align-items-center gap-2">
+                                <i class="ti ti-circle-dashed-check"></i>
+                                {% trans "Approche Structurée" %}
+                            </li>
+                            <li class="d-flex align-items-center gap-2">
+                                <i class="ti ti-circle-dashed-check"></i>
+                                {% trans "Accompagnement Sur-Mesure" %}
+                            </li>
+                            <li class="d-flex align-items-center gap-2">
+                                <i class="ti ti-circle-dashed-check"></i>
+                                {% trans "Orienté Résultats" %}
+                            </li>
+                            <li class="d-flex align-items-center gap-2">
+                                <i class="ti ti-circle-dashed-check"></i>
+                                {% trans "Rayonnement International" %}
+                            </li>
+                        </ul>
+                        <a href="{% url 'services:services-list' %}" class="default-btn">{% trans "En savoir plus" %}</a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-12">
+                    <div class="about-image position-relative slide-right">
+                        <img src="{% static 'assets/images/about/a-image-1.png' %}" alt="image">
+                        <div class="card1 d-flex align-items-center gap-2 bg-white rounded-pill">
+                            <div class="icon">
+                                <img src="{% static 'assets/images/icon/a-icon-2.png' %}" alt="image">
+                            </div>
+                            <div class="warp">
+                                <div class="d-flex align-items-center">
+                                    <h2 class="counter lh-1 mb-0 fs-40">50</h2>
+                                    <h2 class="lh-1 mb-0 fs-40">+</h2>
+                                </div>
+                                <span class="">{% trans "Clients Satisfaits" %}</span>
+                            </div>
+                        </div>
+                        <div class="card1 style-1 d-flex align-items-center gap-2 bg-white rounded-pill">
+                            <div class="icon">
+                                <img src="{% static 'assets/images/icon/a-icon-1.png' %}" alt="image">
+                            </div>
+                            <div class="warp">
+                                <span class="">{% trans "Partenaire de Confiance" %}</span>
+                            </div>
+                        </div>
+                        <div class="card1 style-2 d-flex align-items-center gap-2 bg-white rounded-pill">
+                            <div class="icon">
+                                <img src="{% static 'assets/images/icon/a-icon-3.png' %}" alt="image">
+                            </div>
+                            <div class="warp">
+                                <div class="d-flex align-items-center">
+                                    <h2 class="counter lh-1 mb-0 fs-40">99</h2>
+                                    <h2 class="lh-1 mb-0 fs-40">%</h2>
+                                </div>
+                                <span class="">{% trans "Retour sur Investissement" %}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start About Area -->
+
+
+    <div class="startup-service-area pb-120 pt-120">
+        <div class="container-fluid side-padding">
+            <div class="top-bar slide-bottom">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-8">
+                        <div class="section-heading mb-0">
+                            <h2 class="mb-0 lh-1">
+                                {% trans "Notre Approche depuis 15 ans" %}
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="s-btn text-end">
+                            <a href="{% url 'services:services-list' %}" class="default-btn">{% trans "Nos prestations" %}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper ServiceSlider slide-top">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="startup-service-card br-10">
+                            <h1>O1</h1>
+                            <h3 class="fs-25">
+                                {% trans "Cadrage stratégique et alignement business-IT" %}
+                            </h3>
+                            <img class="shape" src="{% static 'assets/images/shape/service-shape.png' %}" alt="image">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="startup-service-card br-10">
+                            <h1>O2</h1>
+                            <h3 class="fs-25">
+                                {% trans "Définition du schéma directeur informatique" %}
+                            </h3>
+                            <img class="shape" src="{% static 'assets/images/shape/service-shape.png' %}" alt="image">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="startup-service-card br-10">
+                            <h1>O3</h1>
+                            <h3 class="fs-25">
+                                {% trans "Pilotage de portefeuilles de projets (PMO)" %}
+                            </h3>
+                            <img class="shape" src="{% static 'assets/images/shape/service-shape.png' %}" alt="image">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="startup-service-card br-10">
+                            <h1>O4</h1>
+                            <h3 class="fs-25">
+                                {% trans "Gouvernance des données et des systèmes" %}
+                            </h3>
+                            <img class="shape" src="{% static 'assets/images/shape/service-shape.png' %}" alt="image">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="startup-service-card br-10">
+                            <h1>O5</h1>
+                            <h3 class="fs-25">
+                                {% trans "Optimisation des processus opérationnels et financiers IT" %}
+                            </h3>
+                            <img class="shape" src="{% static 'assets/images/shape/service-shape.png' %}" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Team Area -->
+    <div class="team-area ptb-120">
+        <div class="container">
+            <div class="section-title slide-bottom">
+                <h2>
+                    {% trans "Découvrez les professionnels qui propulsent votre entreprise en avant." %}
+                </h2>
+            </div>
+            <div class="row g-4 slide-top">
+
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="single-team-card active" id="my-element">
+                        <div class="team-image mb-4 position-relative">
+                            <img src="{% static 'assets/images/team/team1.jpg' %}" alt="image">
+                            <ul class="social-icon pe-0 mb-0 list-unstyled d-flex align-items-center gap-4">
+                                <li><a href="https://www.facebook.com"><i class="ti ti-brand-facebook"></i></a></li>
+                                <li><a href="https://www.twitter.com"><i class="ti ti-brand-x"></i></a></li>
+                                <li><a href="https://www.linkedin.com"><i class="ti ti-brand-linkedin"></i></a></li>
+                                <li><a href="https://www.instagram.com"><i class="ti ti-brand-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="fs-25 mb-1 lh-1">{% trans "Emmanuel Sombo" %}</h3>
+                            <span class="fs-20">{% trans "CEO - Directeur" %}</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Team Area -->
+
+    
+    {% if best_testimonial %}
+        <!-- Start Testimonials Area -->
+        <div class="testimonials-area pb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-6">
+                        <div class="testimonials-content br-15 slide-left" style="background-image: url({% static 'assets/images/team/testimoni-bg.png' %});">
+                            <div class="row align-items-center">
+                                <div class="col-xl-7 col-lg-6 col-md-7">
+                                    <div class="t-title">
+                                        <h2 class="text-white fs-40 mb-4">
+                                            {% trans "Nous vous aidons" %}
+                                            <span class="d-block"></span> {% trans "à améliorer" %}
+                                            <span class="d-block"></span> {% trans "votre entreprise!" %}
+                                        </h2>
+                                        <a href="{% url 'contacts:contact' %}" class="default-btn">{% trans "En savoir plus" %}</a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-5 col-lg-6 col-md-5">
+                                    <div class="t-image">
+                                        <img src="{% static 'assets/images/team/testimoni-man.png' %}" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimono-card br-15 bg-00436a slide-right">
+                            <div class="user d-flex align-items-center gap-3">
+                                <div class="u-image">
+                                    {% if best_testimonial.client_picture %}
+                                        <img src="{{ best_testimonial.client_picture.url }}" alt="image">
+                                    {% else %}
+                                        <img src="{% static 'assets/images/user/user-1.png' %}" alt="image">
+                                    {% endif %}
+                                </div>
+                                <div class="content">
+                                    <h3 class="fs-18 text-white mb-1 lh-1">
+                                        <a href="#" class="text-white">{{ best_testimonial.client_name }}</a>
+                                    </h3>
+                                    <span class="d-block mb-2">{{ best_testimonial.client_position }}</span>
+                                    {% for star in "12345" %}
+                                        {% if forloop.counter <= best_testimonial.stars %}
+                                            <i class="ti ti-star-filled"></i>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <p class="fs-20 text-white mb-0" style="color: #fff !important;">
+                                {{ best_testimonial.feedback|safe }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Testimonials Area -->
+    {% endif %}
+    
+    
+    {% include "public/includes/partials/contact_banner.html" %}
+{% endblock content %}

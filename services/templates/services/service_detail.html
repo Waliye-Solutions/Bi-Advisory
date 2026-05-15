@@ -1,0 +1,98 @@
+{% extends "public/includes/base.html" %}
+
+{% load i18n static %}
+
+{% block title %} {% trans "Prestations" %} :: {{ service.name }} - {{ site_name }} {% endblock title %}
+
+
+
+{% block content %}
+    <!-- Start Page Banner Area -->
+    <div class="page-banner-area position-relative z-1 overflow-hidden" style="background-image: url({% static 'assets/images/hero/page-banner.jpg' %});">
+        <div class="container">
+            <div class="page-title text-center">
+                <h3 class="text-white fs-50 mb-2">{% trans "Prestations" %}</h3>
+                <ul class="pe-0 ps-0 mb-0 list-unstyled">
+                    <li><a href="{% url 'core:home' %}">{% trans "Accueil" %}</a></li>
+                    <li><a href="{% url 'services:services-list' %}">{% trans "Prestations" %}</a></li>
+                    <li><span class="active">{{ service.name }}</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Page Banner Area -->
+
+
+    <!-- Start Service Details Area -->
+    <div class="services-details-area ptb-120">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="service-details-content">
+                        <div class="image-s mb-4">
+                            {% if service.picture %}
+                                <img class="br-10" src="{{ service.picture.url }}" alt="image">
+                            {% else %}
+                                <img class="br-10" src="{% static 'assets/images/service/services-details-image.jpg' %}" alt="image">
+                            {% endif %}
+                        </div>
+                        <h3 class="fs-40 mb-3">
+                            {{ service.name|safe }}
+                        </h3>
+                        <div class="mb-4 mb-lg-5">
+                            {{ service.description|safe }}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="l-sidebar">
+                        {% if other_services %}
+                            <div class="sidecard mb-4 card-btnstyle">
+                                <h3 class="fs-24 lh-1 mb-4">{% trans "Autres prestations" %}</h3>
+                                <ul class="ps-0 pe-0 mb-0 list-unstyled">
+                                    {% for other_service in other_services %}
+                                        <li>
+                                            <a href="{{ other_service.get_absolute_url }}" class="d-flex justify-content-between align-items-center">
+                                                {{ other_service.name }}
+                                                <i class="ti ti-arrow-narrow-right"></i>
+                                            </a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        {% endif %}
+
+
+
+                        <div class="contact-card card-btnstyle mb-4">
+                            <h3 class="fs-24 lh-1 mb-4 text-white">
+                                {% trans "Besoin d'aide ?" %}
+                            </h3>
+                            <p class="text-white">
+                                {% trans "Vous préférez parler à une personne plutôt que de remplir un formulaire ? Appelez-nous. directement." %}
+                            </p>
+                            <div class="phone-card mb-4">
+                                <div class="icon">
+                                    <a href="tel:{{ site_phone_number }}" class="fs-30 text-white">
+                                        {{ site_phone_number }}
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="mailto:{{ site_email_address }}" class="text-decoration-underline fs-20">
+                                        {{ site_email_address }}
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="{% url 'contacts:contact' %}" class="default-btn">{% trans "Contactez-nous" %}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Service Details Area -->
+
+    
+    {% include "public/includes/partials/contact_banner.html" %}
+{% endblock content %}

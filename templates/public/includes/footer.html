@@ -1,0 +1,97 @@
+{% load static i18n %}
+
+    <!-- Start Footer Area -->
+    <div class="footer-area ptb-120 bg-rgb">
+        <div class="container">
+            <div class="row g-4 slide-top">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <div class="logo mb-4">
+                            <img src="{% static 'assets/images/footer-logo.png' %}" alt="image">
+                        </div>
+                        <h4 class="fs-22">
+                            {% trans "Souscrivez à notre newsletter pour ne rien rater !" %}
+                        </h4>
+                        <div class="newsform position-relative">
+                            <form action="{% url 'newsletter:subscribe' %}" method="POST">
+                                {% csrf_token %}
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="{% trans 'Email' %}" name="email" required>
+                                    <button type="submit" class="icon"><i class="ti ti-send"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget pse-100">
+                        <h3 class="mb-4 fs-25">{% trans "Liens utiles" %}</h3>
+                        <ul class="pe-0 ps-0 mb-0 list-unstyled">
+                            <li><a href="{% url 'core:about-us' %}">{% trans "À propos" %}</a></li>
+                            <li><a href="{% url 'services:services-list' %}">{% trans "Prestations" %}</a></li>
+                            <li><a href="{% url 'contacts:contact' %}">{% trans "Contact" %}</a></li>
+                        </ul>
+                    </div>
+                </div>
+                {% comment %} <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget pes-1">
+                        <h3 class="mb-4 fs-25">{% trans "Services" %}</h3>
+                        <ul class="pe-0 ps-0 mb-0 list-unstyled">
+                            <li><a href="service-details.html">IT Software</a></li>
+                            <li><a href="service-details.html">IT Support</a></li>
+                            <li><a href="service-details.html">IT Platforms</a></li>
+                            <li><a href="service-details.html">Cloud Computing</a></li>
+                            <li><a href="service-details.html">Cyber Security</a></li>
+                        </ul>
+                    </div>
+                </div> {% endcomment %}
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget ps-100">
+                        <h3 class="mb-4 fs-25">{% trans "Contact" %}</h3>
+                        <div class="phone-card d-flex align-items-center gap-4 mb-3">
+                            <div class="icon">
+                                <i class="ti ti-phone-call"></i>
+                            </div>
+                            <div>
+                                <h5 class="fs-20 fw-bold">{% trans "Téléphone" %}:</h5>
+                                <a href="tel:{{ site_phone_number }}">{{ site_phone_number }}</a>
+                            </div>
+                        </div>
+                        <div class="phone-card d-flex align-items-center gap-4 mb-3">
+                            <div class="icon">
+                                <i class="ti ti-map"></i>
+                            </div>
+                            <div>
+                                <h5 class="fs-20 fw-bold">{% trans "Adresse" %}:</h5>
+                                <a href="https://www.google.com/maps/search/3016+sunrise+road+las+australia/@-26.4308142,152.9829778,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D">
+                                    {{ site_address }}
+                                </a>
+                            </div>
+                        </div>
+                        <div class="phone-card d-flex align-items-center gap-4">
+                            <div class="icon">
+                                <i class="ti ti-mail"></i>
+                            </div>
+                            <div>
+                                <h5 class="fs-20 fw-bold">{% trans "Email" %}:</h5>
+                                <a href="mailto:{{ site_email_address }}">{{ site_email_address }}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer Area -->
+
+
+    <!-- Start Copyright Area -->
+    <div class="copyright-area bg-00436a">
+        <div class="container">
+            <p class="text-center text-white">
+                &copy; <a href="{% url 'core:home' %}">{{ site_name }}</a> - {% now "Y" %}.
+                {% trans "Tous droits réservés" %}
+            </p>
+        </div>
+    </div>
+    <!-- End Copyright Area -->

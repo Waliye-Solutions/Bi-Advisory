@@ -1,0 +1,399 @@
+{% extends "public/includes/base.html" %}
+
+{% load i18n static %}
+
+{% block title %} {{ site_name }} - {% trans "Advisory Business Improvement" %} {% endblock title %}
+
+{% block content %}
+    <!-- Start Software Banner Area -->
+    <div class="software-banner-area position-relative">
+        <div class="container-fluid side-padding">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="software-content position-relative" style="max-width: 635px;" data-cues="slideInUp" data-group="contentAnimation">
+                        <span class="sub-title fs-18 text-uppercase">{% trans "Advisory Business Improvement" %}</span>
+                        <h1 class="fs-60">
+                            {% trans "Votre partenaire de" %} <span>{% trans "Confiance" %}</span> {% trans "en conseil & transformation IT" %}
+                        </h1>
+                        <p>
+                            {% blocktrans %}
+                                Advisory Business Improvement (ABI) est une société de conseil IT spécialisée dans 
+                                l'accompagnement des organisations dans leur transformation numérique.
+                            {% endblocktrans %}
+                        </p>
+                        <a href="{% url 'contacts:contact' %}" class="default-btn">{% trans "Contact" %}</a>
+                        <div class="cricle-content">
+                            <div class="cricle position-relative">
+                                <img class="c-image simple-rotate" src="{% static 'assets/images/shape/banner-cricle.png' %}" alt="image">
+                                <a href="#"><i class="ti ti-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="banner-image" style="background-image: url({% static 'assets/images/hero/banner-image-1.jpg' %});" data-cues="slideInLeft" data-duration="800">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shapes-image">
+            <img class="shape-1" src="{% static 'assets/images/shape/banner-shape-1.png' %}" alt="image">
+            <img class="shape-2" src="{% static 'assets/images/shape/banner-shape-1.png' %}" alt="image">
+            <img class="shape-3" src="{% static 'assets/images/shape/banner-shape-2.png' %}" alt="image">
+            <img class="shape-4" src="{% static 'assets/images/shape/banner-shape-2.png' %}" alt="image">
+        </div>
+    </div>
+    <!-- End Software Banner Area -->
+
+
+
+    <!-- Start Software Service Area -->
+    <div class="software-service-area ptb-120">
+        <div class="container">
+            <div class="section-title slide-bottom" style="max-width: 750px;">
+                <h2>{% trans "Stratégie digitale & Implémentation ERP" %}</h2>
+            </div>
+            <div class="row g-4 slide-top">
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="software-services-card">
+                        <div class="icon d-flex align-items-center gap-4 mb-4">
+                            <img src="{% static 'assets/images/icon/s-1.png' %}" alt="image">
+                            <h3 class="fs-24 mb-0">{% trans "Analyse & Cadrage​" %}</h3>
+                        </div>
+                        <p>
+                            {% trans "Rédaction du cahier des charges fonctionnel et technique​" %}
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="software-services-card">
+                        <div class="icon d-flex align-items-center gap-4 mb-4">
+                            <img src="{% static 'assets/images/icon/s-2.png' %}" alt="image">
+                            <h3 class="fs-24 mb-0">{% trans "Sélection" %}</h3>
+                        </div>
+                        <p>{% trans "Analyse des offres logicielles, benchmark & recommandation​" %}</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="software-services-card">
+                        <div class="icon d-flex align-items-center gap-4 mb-4">
+                            <img src="{% static 'assets/images/icon/s-3.png' %}" alt="image">
+                            <h3 class="fs-24 mb-0">{% trans "Paramétrage" %}</h3>
+                        </div>
+                        <p>{% trans "Configuration des modules du progiciel intégré​" %}</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="software-services-card">
+                        <div class="icon d-flex align-items-center gap-4 mb-4">
+                            <img src="{% static 'assets/images/icon/s-4.png' %}" alt="image">
+                            <h3 class="fs-24 mb-0">{% trans "Déploiement" %}</h3>
+                        </div>
+                        <p>
+                            {% trans "Implémentation, tests, formation et go-live​" %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Software Service Area -->
+
+
+    {% if services %}
+        <!-- Start Features Area -->
+        <div class="features-area ptb-120 bg-rgb">
+            <div class="container-fluid side-padding">
+                <div class="section-title slide-bottom">
+                    <h2>{% trans "Nos Domaines d'expertise" %}</h2>
+                </div>
+                <div class="row g-4 slide-top">
+                    {% for service in services %}
+                        <div class="col-xl-3 col-lg-6 col-md-6">
+                            <div class="single-features-card br-10 bg-white">
+                                {% comment %} <img src="{{ service.icon.url }}" alt="image"> {% endcomment %}
+                                <h5 class="fs-24">
+                                    <a href="{{ service.get_absolute_url }}">{{ service.name|safe }}</a>
+                                </h5>
+                                <p>{{ service.summary|safe }}</p>
+                                {% comment %} <img class="shape1" src="{{ service.icon.url }}" alt="image"> {% endcomment %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <!-- End Features Area -->
+    {% endif %}
+
+
+    <!-- Start S Funfact Area -->
+    <div class="s-funfact-area ptb-120">
+        <div class="container">
+            <div class="row rowgap g-4 slide-top">
+                <div class="col-lg-3 col-6 col-md-6">
+                    <div class="s-funcard">
+                        <div class="warp">
+                            <div class="d-flex align-items-center">
+                                <h2 class="counter lh-1 mb-2 fs-64">15</h2>
+                                <h2 class="lh-1 mb-1 fs-64">+</h2>
+                            </div>
+                            <span class="fs-18 c-555">{% trans "Années d'expérience" %}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 col-md-6">
+                    <div class="s-funcard">
+                        <div class="warp">
+                            <div class="d-flex align-items-center">
+                                <h2 class="counter lh-1 mb-2 fs-64">100</h2>
+                                <h2 class="lh-1 mb-1 fs-64">+</h2>
+                            </div>
+                            <span class="fs-18 c-555">{% trans "Projets Réussis" %}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 col-md-6">
+                    <div class="s-funcard">
+                        <div class="warp">
+                            <div class="d-flex align-items-center">
+                                <h2 class="counter lh-1 mb-2 fs-64">50</h2>
+                                <h2 class="lh-1 mb-1 fs-64">+</h2>
+                            </div>
+                            <span class="fs-18 c-555">{% trans "Clients Satisfaits" %}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 col-md-6">
+                    <div class="s-funcard">
+                        <div class="warp">
+                            <div class="d-flex align-items-center">
+                                <h2 class="counter lh-1 mb-2 fs-64">20</h2>
+                                <h2 class="lh-1 mb-1 fs-64">+</h2>
+                            </div>
+                            <span class="fs-18 c-555">{% trans "Consultants Experts" %}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End S Funfact Area -->
+
+
+    <!-- Start software Consultation Area -->
+    <div class="software-consultation-area position-relative z-1" style="background-image: url({% static 'assets/images/hero/con-bg.jpg' %});">
+        <div class="container-fluid side-padding">
+        </div>
+    </div>
+    <div class="new-form">
+        <div class="container">
+            <div class="new-form-items bg-00436a br-10">
+                <form class="free-form mb-4 mb-lg-5 contact-card1" method="POST" action="{% url 'contacts:contact' %}">
+                    {% csrf_token %}
+                    <h2 class="fs-40 text-white mb-4 text-center">{% trans "Prenez une consultation" %}</h2>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            {{ contact_form.full_name }}
+                        </div>
+                        <div class="col-lg-4">
+                            {{ contact_form.email }}
+                        </div>
+                        <div class="col-lg-4">
+                            {{ contact_form.phone_number }}
+                        </div>
+                        <div class="col-lg-12">
+                            {{ contact_form.subject }}
+                        </div>
+                        <div class="col-lg-12">
+                            {{ contact_form.message }}
+                        </div>
+                    </div>
+                    <div class="c-btn">
+                        <button type="submit" class="default-btn">{% trans "Prenez rendez-vous" %}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End software Consultation Area -->
+
+
+
+    {% if testimonials %}
+        <!-- Start Clients Area -->
+        <div class="clients-area pt-120 position-relative z-1 bg-f3f3f3">
+            <div class="container">
+                <div class="section-title slide-bottom" style="max-width: 650px;">
+                    <h2 class="mb-2">{% trans "Avis de nos clients" %}</h2>
+                    <p>
+                        {% trans "Découvrez ce que nos clients pensent de nos services" %}
+                    </p>
+                </div>
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-7">
+                        <div class="r-warps">
+                            <div class="swiper review-Slider">
+                                <div class="swiper-wrapper">
+                                    {% for testimonial in testimonials %}
+                                        <div class="swiper-slide">
+                                            <div class="c-content position-relative z-1 slide-left" style="max-width: 640px;">
+                                                <h4 class="fs-30 fw-semibold">
+                                                    {{ testimonial.client_country.name|safe }}
+                                                </h4>
+                                                <p class="fs-25 c-555 fs-italic fw-semibold">
+                                                    {{ testimonial.feedback|safe }}
+                                                </p>
+                                                <div class="author">
+                                                    <h5 class="fs-20">
+                                                        <a href="javascript:void(0);">{{ testimonial.client_name|safe }}</a>
+                                                    </h5>
+                                                    
+                                                    {% if testimonial.client_position %}
+                                                        <span class="d-block">{{ testimonial.client_position|safe }}</span>
+                                                    {% endif %}
+
+                                                    {% for star in "12345" %}
+                                                        {% if forloop.counter <= testimonial.stars %}
+                                                            <i class="ti ti-star-filled"></i>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                </div>
+                                                <img class="c-qoute" src="{% static 'assets/images/icon/c-qoute.png' %}" alt="image">
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="top-bar mt-5 ts-btn">
+                                <div class="as-btn position-relative">
+                                    <div class="swiper-button-next">
+                                        <i class="ti ti-arrow-narrow-right"></i>
+                                    </div>
+                                    <div class="swiper-button-prev">
+                                        <i class="ti ti-arrow-narrow-left"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="c-image position-relative slide-right">
+                            {% with first_image=testimonials.first.client_picture %}
+                                {% if first_image %}
+                                    <img class="rounded-circle u-image1" src="{{ first_image.url }}" alt="image">
+                                {% endif %}
+                            {% endwith %}
+
+                            {% for testimonial in testimonials %}
+                                {% if testimonial.client_picture %}
+                                    <img class="rounded-circle u-image1" src="{{ testimonial.client_picture.url }}" alt="image">
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <img class="c-shape" src="{% static 'assets/images/shape/c-shape.png' %}" alt="image">
+        </div>
+        <!-- End Clients Area -->
+    {% endif %}
+
+
+    {% include "public/includes/partials/contact_banner.html" %}
+
+{% endblock content %}
+
+
+
+{% block extra_scripts %}
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const form = document.querySelector(".contact-card1");
+
+            const fullName = document.querySelector('[name="full_name"]');
+            const email = document.querySelector('[name="email"]');
+            const phone = document.querySelector('[name="phone_number"]');
+            const subject = document.querySelector('[name="subject"]');
+            const message = document.querySelector('[name="message"]');
+
+            function showError(input, message) {
+                removeError(input);
+
+                const error = document.createElement("small");
+                error.classList.add("text-danger", "d-block", "mt-1");
+                error.innerText = message;
+
+                input.classList.add("border-danger");
+
+                input.parentNode.appendChild(error);
+            }
+
+            function removeError(input) {
+                input.classList.remove("border-danger");
+
+                const existingError = input.parentNode.querySelector("small");
+                if (existingError) {
+                    existingError.remove();
+                }
+            }
+
+            function validateEmail(emailValue) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue);
+            }
+
+            form.addEventListener("submit", function (e) {
+                let isValid = true;
+
+                // Nettoyage des anciennes erreurs
+                [fullName, email, phone, subject, message].forEach(input => {
+                    removeError(input);
+                });
+
+                // Full Name
+                if (fullName.value.trim() === "") {
+                    showError(fullName, "{% trans 'Veuillez entrer votre nom complet.' %}");
+                    isValid = false;
+                }
+
+                // Email
+                if (email.value.trim() === "") {
+                    showError(email, "{% trans 'Veuillez entrer votre adresse email.' %}");
+                    isValid = false;
+                } else if (!validateEmail(email.value.trim())) {
+                    showError(email, "{% trans 'Adresse email invalide.' %}");
+                    isValid = false;
+                }
+
+                // Phone
+                if (phone.value.trim() === "") {
+                    showError(phone, "{% trans 'Veuillez entrer votre numéro de téléphone.' %}");
+                    isValid = false;
+                }
+
+                // Subject
+                if (subject.value.trim() === "") {
+                    showError(subject, "{% trans 'Veuillez saisir le sujet.' %}");
+                    isValid = false;
+                }
+
+                // Message
+                if (message.value.trim() === "") {
+                    showError(message, "{% trans 'Veuillez écrire un message.' %}");
+                    isValid = false;
+                } else if (message.value.trim().length < 10) {
+                    showError(message, "{% trans 'Le message doit contenir au moins 10 caractères.' %}");
+                    isValid = false;
+                }
+
+                if (!isValid) {
+                    e.preventDefault();
+                }
+
+            });
+
+        });
+    </script>
+{% endblock extra_scripts %}
