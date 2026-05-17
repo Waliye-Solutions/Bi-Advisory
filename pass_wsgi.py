@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 
 
-path = "/home/biadeynh/biadvisorytech_python"
+path = "/home/biadeynh/Bi-Advisory"
 if path not in sys.path:
     sys.path.append(path)
 
