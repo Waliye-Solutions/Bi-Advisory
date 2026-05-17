@@ -219,3 +219,6 @@ drafts/
 .DS_STORE
 collectstatic/
 mediafiles/
+.temp
+temp/
+temp/*
