@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+from teams.models import Team
 from services.models import Service
 from contacts.forms import ContactForm
 from testimonials.models import Testimonial
@@ -23,6 +24,7 @@ def about_us_view(request):
     context = {
         "about_us_page_is_active": True,
         "best_testimonial": best_testimonial,
+        "teams": Team.objects.all(),
     }
     template_name = "core/about_us.html"
     return render(request, template_name,  context)

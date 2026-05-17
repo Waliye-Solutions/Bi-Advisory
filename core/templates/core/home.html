@@ -24,7 +24,7 @@
                         <a href="{% url 'contacts:contact' %}" class="default-btn">{% trans "Contact" %}</a>
                         <div class="cricle-content">
                             <div class="cricle position-relative">
-                                <img class="c-image simple-rotate" src="{% static 'assets/images/shape/banner-cricle.png' %}" alt="image">
+                                {% comment %} <img class="c-image simple-rotate" src="{% static 'assets/images/shape/banner-cricle.png' %}" alt="image"> {% endcomment %}
                                 <a href="#"><i class="ti ti-arrow-up-right"></i></a>
                             </div>
                         </div>
@@ -279,15 +279,17 @@
                     </div>
                     <div class="col-lg-5">
                         <div class="c-image position-relative slide-right">
-                            {% with first_image=testimonials.first.client_picture %}
-                                {% if first_image %}
-                                    <img class="rounded-circle u-image1" src="{{ first_image.url }}" alt="image">
-                                {% endif %}
-                            {% endwith %}
+                            {% if testimonials.first.client_picture %}
+                                <img class="rounded-circle" src="{{ testimonials.first.client_picture.url }}" alt="image">
+                            {% else %}
+                                <img class="rounded-circle" src="{% static 'assets/images/team/client-image.jpg' %}" alt="image">
+                            {% endif %}
 
                             {% for testimonial in testimonials %}
                                 {% if testimonial.client_picture %}
                                     <img class="rounded-circle u-image1" src="{{ testimonial.client_picture.url }}" alt="image">
+                                {% else %}
+                                    <img class="rounded-circle u-image1" src="{% static 'assets/images/team/client-image.jpg' %}" alt="image">
                                 {% endif %}
                             {% endfor %}
                         </div>

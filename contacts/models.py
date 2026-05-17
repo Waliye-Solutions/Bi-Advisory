@@ -12,8 +12,8 @@ class Contact(AbstractBaseModel):
     message = models.TextField(verbose_name=_("Message"))
     
     class Meta(AbstractBaseModel.Meta):
-        verbose_name = _("Contact")
-        verbose_name_plural = _("Contacts")
+        verbose_name = _("Message")
+        verbose_name_plural = _("Messages")
         ordering = [*AbstractBaseModel.Meta.ordering, "subject", "full_name"]
     
     def __str__(self):

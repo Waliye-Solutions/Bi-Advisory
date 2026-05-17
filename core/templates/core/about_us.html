@@ -191,38 +191,55 @@
         </div>
     </div>
 
-    <!-- Start Team Area -->
-    <div class="team-area ptb-120">
-        <div class="container">
-            <div class="section-title slide-bottom">
-                <h2>
-                    {% trans "Découvrez les professionnels qui propulsent votre entreprise en avant." %}
-                </h2>
-            </div>
-            <div class="row g-4 slide-top">
-
-                <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="single-team-card active" id="my-element">
-                        <div class="team-image mb-4 position-relative">
-                            <img src="{% static 'assets/images/team/team1.jpg' %}" alt="image">
-                            <ul class="social-icon pe-0 mb-0 list-unstyled d-flex align-items-center gap-4">
-                                <li><a href="https://www.facebook.com"><i class="ti ti-brand-facebook"></i></a></li>
-                                <li><a href="https://www.twitter.com"><i class="ti ti-brand-x"></i></a></li>
-                                <li><a href="https://www.linkedin.com"><i class="ti ti-brand-linkedin"></i></a></li>
-                                <li><a href="https://www.instagram.com"><i class="ti ti-brand-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="card-body">
-                            <h3 class="fs-25 mb-1 lh-1">{% trans "Emmanuel Sombo" %}</h3>
-                            <span class="fs-20">{% trans "CEO - Directeur" %}</span>
-                        </div>
-                    </div>
+    {% if teams %}
+        <!-- Start Team Area -->
+        <div class="team-area ptb-120">
+            <div class="container">
+                <div class="section-title slide-bottom">
+                    <h2>
+                        {% trans "Découvrez les professionnels qui propulsent votre entreprise en avant." %}
+                    </h2>
                 </div>
+                <div class="row g-4 slide-top">
+                    {% for team in teams %}
+                        <div class="col-xl-3 col-lg-6 col-md-6">
+                            <div class="single-team-card active" id="my-element">
+                                <div class="team-image mb-4 position-relative">
+                                    
+                                    {% if team.picture %}
+                                        <img src="{{ team.picture.url }}" alt="image">
+                                    {% else %}
+                                        <img src="{% static 'assets/images/team/team-default.jpg' %}" alt="image">
+                                    {% endif %}
 
+                                    <ul class="social-icon pe-0 mb-0 list-unstyled d-flex align-items-center gap-4">
+                                        {% if team.facebook %}
+                                            <li><a href="{{ team.facebook }}" target="_blank"><i class="ti ti-brand-facebook"></i></a></li>
+                                        {% endif %}
+                                        {% if team.twitter %}
+                                            <li><a href="{{ team.twitter }}" target="_blank"><i class="ti ti-brand-x"></i></a></li>
+                                        {% endif %}
+                                        {% if team.linkedin %}
+                                            <li><a href="{{ team.linkedin }}" target="_blank"><i class="ti ti-brand-linkedin"></i></a></li>
+                                        {% endif %}
+                                        {% if team.instagram %}
+                                            <li><a href="{{ team.instagram }}" target="_blank"><i class="ti ti-brand-instagram"></i></a></li>
+                                        {% endif %}
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="fs-25 mb-1 lh-1">{{ team.full_name }}</h3>
+                                    <span class="fs-20">{{ team.role }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+
+                </div>
             </div>
         </div>
-    </div>
-    <!-- End Team Area -->
+        <!-- End Team Area -->
+    {% endif %}
 
     
     {% if best_testimonial %}

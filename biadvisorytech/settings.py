@@ -123,6 +123,7 @@ INSTALLED_APPS = [
     "core.apps.CoreConfig",
     "newsletter.apps.NewsletterConfig",
     "services.apps.ServicesConfig",
+    "teams.apps.TeamsConfig",
     "testimonials.apps.TestimonialsConfig",
     "utilities.apps.UtilitiesConfig",
 ]

@@ -1,7 +1,7 @@
 from django.apps import AppConfig
 from django.utils.translation import gettext_lazy as _
 
-class ServicesConfig(AppConfig):
+class TeamsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'services'
-    verbose_name = _("Prestations & Services")
+    name = 'teams'
+    verbose_name = _("Équipes & Experts")
