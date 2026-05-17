@@ -1,4 +1,6 @@
+from typing import Union
 from django import template
+
 
 register = template.Library()
 
@@ -8,7 +10,7 @@ def convert_to_int(value):
 
 
 @register.filter()
-def number_is_negative(value: int|float):
+def number_is_negative(value: Union[int, float]):
     try:
         if value < 0:
             return True
