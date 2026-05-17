@@ -222,3 +222,6 @@ mediafiles/
 .temp
 temp/
 temp/*
+tmp/
+tmp/*
+.tmp
