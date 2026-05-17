@@ -71,9 +71,7 @@ class BaseEmailService:
     
     
     
-    def _build_email_message(
-        self, from_email: str, connection: BaseEmailBackend | None = None
-    ) -> EmailMessage:
+    def _build_email_message(self, from_email: str, connection: Optional[BaseEmailBackend] = None) -> EmailMessage:
         email = EmailMessage(
             subject=self.mail_subject,
             body=self.email_content,
