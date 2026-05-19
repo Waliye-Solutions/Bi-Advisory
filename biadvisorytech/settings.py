@@ -76,8 +76,7 @@ SITE_ADDRESS = config("SITE_ADDRESS", data_type=str, default="Abidjan, Côte d'I
 
 _default_site_desc = """
     ABI est une entreprise de conseil en technologie qui aide les entreprises à tirer parti de la technologie 
-    pour atteindre leurs objectifs commerciaux. Nous offrons une gamme de services, 
-    y compris le développement de logiciels, la gestion de projets, et le conseil en stratégie technologique.
+    pour atteindre leurs objectifs commerciaux.
 """
 SITE_DESCRIPTION = config("SITE_DESCRIPTION", data_type=str, default=_default_site_desc)
 
