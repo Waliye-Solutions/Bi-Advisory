@@ -72,7 +72,7 @@ ADMINS = [
 SITE_NAME = config("SITE_NAME", data_type=str, default="ABI")
 SITE_PHONE_NUMBER = config("SITE_PHONE_NUMBER", data_type=str, default="+225 01 01 07 60 29")
 SITE_EMAIL_ADDRESS = config("SITE_EMAIL_ADDRESS", data_type=str, default="contact@biadvisorytech.com")
-SITE_ADDRESS = config("SITE_ADDRESS", data_type=str, default="Abidjan, Côte d'Ivoire")
+SITE_ADDRESS = config("SITE_ADDRESS", data_type=str, default="Abidjan, CI")
 
 _default_site_desc = """
     ABI est une entreprise de conseil en technologie qui aide les entreprises à tirer parti de la technologie 
