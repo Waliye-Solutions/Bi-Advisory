@@ -22,7 +22,7 @@ admin.site.unregister(BlacklistUserAgent)
 # no need to register Site model in admin since it's only used for managing multiple sites in a Django project and doesn't require any 
 # custom admin interface or management.
 admin.site.unregister(Site)
-admin.site.register(Site, CustomModelExemptedAdmin)
+# admin.site.register(Site, CustomModelExemptedAdmin)
 
 
 
